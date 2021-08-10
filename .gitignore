@@ -1,0 +1,6 @@
+.cache
+dist
+node_modules
+public/tailwind.css
+stats.html
+yarn-error.log
