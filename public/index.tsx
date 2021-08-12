@@ -1,7 +1,6 @@
 import {
   ErrorBoundary,
   hydrate,
-  lazy,
   LocationProvider,
   prerender as ssr,
   Route,

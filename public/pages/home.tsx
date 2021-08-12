@@ -1,22 +1,43 @@
+import { useRoute } from "preact-iso";
 import { useState } from "preact/hooks";
 import { Accordion } from "../components/accordion";
 import { BookmarkList } from "../components/bookmarks";
 import { bookmarks } from "../data/bookmarks";
 
 export default function Home() {
-  const firstGroup = bookmarks[0]?.title;
-  const [currentPane, setCurrentPane] = useState<string>(firstGroup);
+  // Get the initial collection from the route, use the first in the list as a
+  // fallback
+  const route = useRoute();
+
+  const initial = bookmarks.find(
+    (collection) => collection.title === route.query.c
+  )
+    ? route.query.c
+    : bookmarks[0]?.title;
+
+  // Currently visible collection
+  const [current, setCurrent] = useState<string>(initial);
+
+  // Update the current collection as well as the router state
+  const setCurrentAndNavigate = (next: string) => {
+    setCurrent(next);
+    history.pushState(null, "", `?c=${encodeURIComponent(next)}`);
+  };
 
   return (
     <div className="p-8 h-screen bg-gray-50">
       <Accordion
         className="h-full"
-        currentPane={currentPane}
-        onPaneChange={(next) => setCurrentPane(next)}
+        currentPane={current}
+        onPaneChange={setCurrentAndNavigate}
       >
-        {bookmarks.map((group) => (
-          <div title={group.title} id={group.title} icon={group.icon}>
-            <BookmarkList {...group} />
+        {bookmarks.map((collection) => (
+          <div
+            title={collection.title}
+            id={collection.title}
+            icon={collection.icon}
+          >
+            <BookmarkList {...collection} />
           </div>
         ))}
       </Accordion>
