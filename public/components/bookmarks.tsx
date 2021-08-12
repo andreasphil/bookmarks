@@ -3,8 +3,33 @@ import { Bookmark, BookmarkCollection } from "../data/types";
 
 const BookmarkListItem: FunctionComponent<Bookmark> = (props) => {
   return (
-    <li className="list-disc">
-      <a href={props.url}>{props.title}</a>
+    <li className="list-none">
+      <a
+        className="group my-[-1px] ring-primary-500 block -mx-4 px-4 py-4 hover:bg-gray-100 rounded outline-none transition-colors duration-100 focus:ring-2"
+        href={props.url}
+      >
+        <span className="flex items-center">
+          {props.icon ? (
+            <span className="inline-flex items-center justify-center mr-2 p-1 w-8 h-8 bg-gray-100 rounded">
+              {props.icon}
+            </span>
+          ) : (
+            <img
+              className="inline-block mr-2 p-1 w-8 h-8 bg-gray-100 rounded"
+              src={`https://www.google.com/s2/favicons?sz=64&domain_url=${props.url}`}
+            />
+          )}
+
+          <span className="group-hover:underline font-semibold leading-tight capitalize">
+            {props.title}
+          </span>
+        </span>
+        {props.description && (
+          <span className="block ml-10 text-gray-500 text-sm">
+            {props.description}
+          </span>
+        )}
+      </a>
     </li>
   );
 };
@@ -17,7 +42,9 @@ const BookmarkSection: FunctionComponent<{
   if (nested) {
     return (
       <li className="list-none">
-        <h3 className="my-4 text-2xl font-bold leading-none">{title}</h3>
+        <h3 className="text-primary-500 mb-4 mt-12 text-sm font-bold leading-none uppercase">
+          {title}
+        </h3>
         {children}
       </li>
     );
@@ -39,7 +66,9 @@ export const BookmarkList: FunctionComponent<
 
   return (
     <BookmarkSection title={props.title} nested={props.nested}>
-      {bookmarks?.length > 0 && <ul className="mt-4 pl-8">{bookmarks}</ul>}
+      {bookmarks?.length > 0 && (
+        <ul className="divide-gray-100 divide-y">{bookmarks}</ul>
+      )}
       {subSections?.length > 0 && <ul>{subSections}</ul>}
     </BookmarkSection>
   );
