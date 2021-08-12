@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  a {
-    @apply text-primary-600 underline;
-  }
 }
 
 @layer components {
@@ -17,7 +14,7 @@
     @apply flex-1 overflow-auto;
   }
   .accordion:not([open]) {
-    @apply bg-gray-100 hover:bg-white cursor-pointer transition-colors duration-100;
+    @apply bg-gray-100 hover:bg-gray-200 cursor-pointer transition-colors duration-100;
     width: calc(var(--accordion-details-icon) + 2rem);
   }
 
@@ -28,7 +25,7 @@
     @apply hidden;
   }
   .accordion[open] > summary {
-    @apply sticky top-0 bg-white bg-opacity-75 rounded-tl rounded-tr backdrop-blur;
+    @apply sticky top-0 bg-white bg-opacity-75 rounded-tl rounded-tr shadow-sm backdrop-blur;
   }
   .accordion:not([open]) > summary {
     @apply block whitespace-nowrap rotate-90;

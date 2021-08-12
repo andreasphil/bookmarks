@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div className="p-8 h-screen bg-gray-50">
+    <div className="h-full">
       <Accordion
         className="h-full"
         currentPane={current}

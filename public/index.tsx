@@ -11,14 +11,16 @@ import NotFound from "./pages/notFound";
 
 export function App() {
   return (
-    <LocationProvider>
-      <ErrorBoundary>
-        <Router>
-          <Route path="/" component={Home} />
-          <Route default component={NotFound} />
-        </Router>
-      </ErrorBoundary>
-    </LocationProvider>
+    <div className="p-4 h-screen antialiased bg-gray-50">
+      <LocationProvider>
+        <ErrorBoundary>
+          <Router>
+            <Route path="/" component={Home} />
+            <Route default component={NotFound} />
+          </Router>
+        </ErrorBoundary>
+      </LocationProvider>
+    </div>
   );
 }
 

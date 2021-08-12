@@ -22,7 +22,7 @@ export const AccordionPane: FunctionComponent<{
     >
       <summary onClick={emitToggle}>
         <section className="container p-4">
-          <h2 className="text-base font-bold leading-none">
+          <h2 className="text-base font-bold leading-none capitalize">
             {props.icon && (
               <span className="w-[var(--accordion-details-icon)] h-[var(--accordion-details-icon)] inline-flex items-center justify-center mr-2 bg-gray-100 rounded-full">
                 {props.icon}
@@ -32,7 +32,7 @@ export const AccordionPane: FunctionComponent<{
           </h2>
         </section>
       </summary>
-      <div className="container pb-24 pt-12 px-4">{props.children}</div>
+      <div className="container mt-20 pb-24 px-4">{props.children}</div>
     </details>
   );
 };
