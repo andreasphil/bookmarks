@@ -2,9 +2,11 @@
   "private": true,
   "scripts": {
     "start": "wmr",
-    "build": "wmr build --prerender",
-    "serve": "wmr serve",
-    "start:tw": "tailwind --input ./public/style.css --output ./public/tailwind.css --watch"
+    "start:tw": "yarn build:tw --watch",
+    "build": "yarn build:tw && yarn build:wmr",
+    "build:wmr": "wmr build --prerender",
+    "build:tw": "tailwind --input ./public/style.css --output ./public/tailwind.css",
+    "serve": "wmr serve"
   },
   "eslintConfig": {
     "extends": "preact"
