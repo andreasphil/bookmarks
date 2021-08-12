@@ -5,7 +5,7 @@ const BookmarkListItem: FunctionComponent<Bookmark> = (props) => {
   return (
     <li className="list-none">
       <a
-        className="group my-[-1px] ring-primary-500 block -mx-4 px-4 py-4 hover:bg-gray-100 rounded outline-none transition-colors duration-100 focus:ring-2"
+        className="group my-[-1px] ring-primary-500 block -mx-4 px-4 py-4 hover:bg-gray-100 normal:rounded outline-none transition-colors duration-100 focus:ring-2"
         href={props.url}
       >
         <span className="flex items-center">
@@ -20,7 +20,7 @@ const BookmarkListItem: FunctionComponent<Bookmark> = (props) => {
             />
           )}
 
-          <span className="group-hover:underline font-semibold leading-tight capitalize">
+          <span className="group-hover:underline font-semibold leading-tight capitalize truncate">
             {props.title}
           </span>
         </span>
@@ -42,7 +42,7 @@ const BookmarkSection: FunctionComponent<{
   if (nested) {
     return (
       <li className="list-none">
-        <h3 className="text-primary-500 mb-4 mt-12 text-sm font-bold leading-none uppercase">
+        <h3 className="text-primary-500 mb-4 normal:mt-12 mt-8 text-sm font-bold leading-none uppercase">
           {title}
         </h3>
         {children}

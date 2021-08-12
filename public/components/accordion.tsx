@@ -32,7 +32,7 @@ export const AccordionPane: FunctionComponent<{
           </h2>
         </section>
       </summary>
-      <div className="container mt-20 pb-24 px-4">{props.children}</div>
+      <div className="container my-10 normal:my-20 px-4">{props.children}</div>
     </details>
   );
 };
@@ -56,7 +56,9 @@ export const Accordion: FunctionComponent<{
   const children = toChildArray(props.children);
 
   return (
-    <div className={`flex space-x-2 ${props.className}`}>
+    <div
+      className={`normal:flex normal:space-x-2 space-y-2 normal:space-y-0 ${props.className}`}
+    >
       {children.map((child) => (
         <AccordionPane
           {...child.props}

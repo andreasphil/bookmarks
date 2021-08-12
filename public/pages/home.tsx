@@ -22,6 +22,7 @@ export default function Home() {
   const setCurrentAndNavigate = (next: string) => {
     setCurrent(next);
     history.pushState(null, "", `?c=${encodeURIComponent(next)}`);
+    window.scroll({ top: 0, behavior: "smooth" });
   };
 
   return (

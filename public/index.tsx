@@ -11,7 +11,7 @@ import NotFound from "./pages/notFound";
 
 export function App() {
   return (
-    <div className="p-4 h-screen antialiased bg-gray-50">
+    <div className="p-4 pb-16 normal:pb-4 normal:h-screen antialiased bg-gray-50">
       <LocationProvider>
         <ErrorBoundary>
           <Router>
