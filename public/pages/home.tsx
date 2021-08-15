@@ -26,7 +26,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-full">
+    <div className="max-w-[1440px] mx-auto h-full">
       <Accordion
         className="h-full"
         currentPane={current}
