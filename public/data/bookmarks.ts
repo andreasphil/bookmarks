@@ -236,7 +236,7 @@ export const bookmarks: BookmarkCollection[] = [
         items: [
           {
             title:
-              "`export default thing` is different to `export { thing as default }`",
+              '"export default thing" is different to "export { thing as default }"',
             url: "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default",
           },
           {
@@ -386,6 +386,11 @@ export const bookmarks: BookmarkCollection[] = [
             description: "Resources for developers, by developers",
           },
           {
+            title: "QuickRef",
+            url: "https://quickref.me",
+            description: "Cheatsheets and quick references",
+          },
+          {
             title: "Rendering performance",
             url: "https://developers.google.com/web/fundamentals/performance/rendering",
           },
@@ -493,7 +498,8 @@ export const bookmarks: BookmarkCollection[] = [
             title: "Haikei",
             url: "https://app.haikei.app",
             icon: "⚫️",
-            description: "Generate unique SVG shapes, backgrounds, and pattern",
+            description:
+              "Generate unique SVG shapes, backgrounds, and patterns",
           },
           {
             title: "Photopea",
