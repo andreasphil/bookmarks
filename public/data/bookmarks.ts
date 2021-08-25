@@ -409,14 +409,6 @@ export const bookmarks: BookmarkCollection[] = [
             url: "https://joshwcomeau.com/css/rules-of-margin-collapse",
           },
           {
-            title: "The State of CSS survey",
-            url: "https://stateofcss.com",
-          },
-          {
-            title: "The State of JavaScript survey",
-            url: "https://stateofjs.com",
-          },
-          {
             title: "The state of web workers",
             url: "https://smashingmagazine.com/2021/06/web-workers-2021",
             icon: "👷",
@@ -441,6 +433,39 @@ export const bookmarks: BookmarkCollection[] = [
           },
         ],
       },
+      {
+        title: "State of the ecosystem & industry",
+        items: [
+          {
+            title: "Developer salaries report 2021",
+            url: "https://cult.honeypot.io/developer-salary-report-2021",
+            description:
+              "13,000 data points to better understand what developers can expert to earn in Germany, the Netherlands, and Austria",
+          },
+          {
+            title: "Stack Overflow annual developer survey",
+            url: "https://insights.stackoverflow.com/survey",
+            description:
+              "Examines all aspects of the developer experience from career satisfaction and job search to education and opinions on open source software",
+          },
+          {
+            title: "Technology Radar",
+            url: "https://www.thoughtworks.com/radar",
+            description: "An opinionated guide to technology frontiers",
+          },
+          {
+            title: "The State of CSS survey",
+            url: "https://stateofcss.com",
+            description: "The annual survey about the latest trends in CSS",
+          },
+          {
+            title: "The State of JavaScript survey",
+            url: "https://stateofjs.com",
+            description:
+              "The annual survey about the latest trends in JavaScript",
+          },
+        ],
+      },
     ],
   },
   {
@@ -450,6 +475,11 @@ export const bookmarks: BookmarkCollection[] = [
       {
         title: "Tools",
         items: [
+          {
+            title: "Blobbb",
+            url: "https://www.blobbb.fun",
+            description: "Get your fluffy blobby SVG shapes in seconds",
+          },
           {
             title: "Blobmaker",
             url: "https://www.blobmaker.app",
@@ -586,6 +616,11 @@ export const bookmarks: BookmarkCollection[] = [
             icon: "🦎",
           },
           {
+            title: "Mesh Gradients",
+            url: "https://www.meshgradients.design",
+            description: "Hand-curated mesh gradient collection",
+          },
+          {
             title: "Old Book Illustrations",
             url: "https://oldbookillustrations.com",
           },
@@ -640,6 +675,12 @@ export const bookmarks: BookmarkCollection[] = [
       {
         title: "Design systems & guides",
         items: [
+          {
+            title: "Brutalist Web Design",
+            url: "https://brutalist-web.design",
+            description:
+              "A set of priorities that put the visitor to your site—the entire reason your website exists—front and center in all things",
+          },
           {
             title: "Design Systems",
             url: "https://designsystems.com",
