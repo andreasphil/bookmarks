@@ -21,6 +21,12 @@ export const bookmarks: BookmarkCollection[] = [
               "Deploy serverless code instantly across the globe to give it exceptional performance, reliability, and scale",
           },
           {
+            title: "Deno Deploy",
+            url: "https://deno.com/deploy",
+            description:
+              "A distributed system that runs JavaScript, TypeScript, and WebAssembly at the edge, worldwide",
+          },
+          {
             title: "Deta",
             url: "https://deta.space",
             description: "Where web apps are yours",
@@ -147,6 +153,12 @@ export const bookmarks: BookmarkCollection[] = [
               "Automated auditing, performance metrics, and best practices for the web",
           },
           {
+            title: "Meta Tags",
+            url: "https://metatags.io",
+            description:
+              "Edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!",
+          },
+          {
             title: "npm",
             url: "https://npmjs.com",
             description: "Build amazing things",
@@ -235,11 +247,6 @@ export const bookmarks: BookmarkCollection[] = [
         title: "Cheatsheets, guides, specs & docs",
         items: [
           {
-            title:
-              '"export default thing" is different to "export { thing as default }"',
-            url: "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default",
-          },
-          {
             title: "A complete guide to custom properties",
             url: "https://css-tricks.com/a-complete-guide-to-custom-properties",
             description:
@@ -250,6 +257,12 @@ export const bookmarks: BookmarkCollection[] = [
             url: "https://css-tricks.com/snippets/css/complete-guide-grid",
             description:
               "Comprehensive guide to CSS grid, focusing on all the settings both for the grid parent container and the grid child elements",
+          },
+          {
+            title: "An introduction to JQ",
+            url: "https://earthly.dev/blog/jq-select",
+            description:
+              "The basics building blocks of jq in enough depth that you will be able to understand how jq works",
           },
           {
             title: "Head",
@@ -330,6 +343,12 @@ export const bookmarks: BookmarkCollection[] = [
             url: "https://essential-go.programming-books.io",
             description:
               "Clear and concise explanation of topics for both beginner and advanced programmers",
+            icon: "🎒",
+          },
+          {
+            title:
+              '"export default thing" is different to "export { thing as default }"',
+            url: "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default",
           },
           {
             title: "Flex visual cheatsheet",
@@ -389,6 +408,10 @@ export const bookmarks: BookmarkCollection[] = [
             title: "QuickRef",
             url: "https://quickref.me",
             description: "Cheatsheets and quick references",
+          },
+          {
+            title: "How to eliminate render-blocking resources: a deep dive",
+            url: "https://sia.codes/posts/render-blocking-resources",
           },
           {
             title: "Rendering performance",
@@ -758,8 +781,14 @@ export const bookmarks: BookmarkCollection[] = [
     icon: "🚀",
     items: [
       {
+        title: "Developer Roadmaps",
+        url: "https://roadmap.sh",
+        description:
+          "Step by step guides and paths to learn different tools or technologies",
+      },
+      {
         title: "Exercism",
-        url: "https://exercism.io",
+        url: "https://exercism.org",
         description: "Code practice and mentorship for everyone",
       },
       {
@@ -770,6 +799,13 @@ export const bookmarks: BookmarkCollection[] = [
       {
         title: "FreeCodeCamp on YouTube",
         url: "https://youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ",
+      },
+      {
+        title: "Interactive learning tools for frontend developers",
+        url: "https://www.smashingmagazine.com/2021/09/interactive-learning-tools-front-end-developers",
+        icon: "🧫",
+        description:
+          "Interactive coding tools and games to help you learn CSS, JavaScript, SQL, React, Vim, regular expressions, Jamstack and pretty much everything in-between",
       },
       {
         title: "Khan Academy",
