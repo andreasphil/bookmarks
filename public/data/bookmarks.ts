@@ -89,6 +89,12 @@ export const bookmarks: BookmarkCollection[] = [
         title: "Tools",
         items: [
           {
+            title: "Analyze CSS",
+            url: "https://www.projectwallace.com/analyze-css",
+            description:
+              "Analyzer that tracks your CSS so you can view changes in your complexity, Design Tokens and much more",
+          },
+          {
             title: "Better Placeholder",
             url: "https://betterplaceholder.com",
             description: "Placeholdit's missing UI",
@@ -128,6 +134,11 @@ export const bookmarks: BookmarkCollection[] = [
             icon: "✍️",
             description:
               "Making the web more beautiful, fast, and open through great typography and iconography",
+          },
+          {
+            title: "Hoppscotch",
+            url: "https://hoppscotch.io",
+            description: "Open source API development ecosystem",
           },
           {
             title: "Hound",
@@ -305,6 +316,12 @@ export const bookmarks: BookmarkCollection[] = [
               "A specification for adding human and machine readable meaning to commit messages",
           },
           {
+            title: "Dash Dash",
+            url: "https://dashdash.io/",
+            description:
+              "Takes the Unix (Linux, BSD, macOS) open source manual pages and sets the content in a beautiful set of typefaces while adding just a bit of animation and design",
+          },
+          {
             title: "Deep JavaScript",
             url: "https://exploringjs.com/deep-js/toc.html",
             icon: "🤿",
@@ -329,7 +346,7 @@ export const bookmarks: BookmarkCollection[] = [
           },
           {
             title: "Effective Go",
-            url: "https://golang.org/doc/effective_go",
+            url: "https://go.dev/doc/effective_go",
             description: "Tips for writing clear, idiomatic Go code",
           },
           {
@@ -340,7 +357,7 @@ export const bookmarks: BookmarkCollection[] = [
           },
           {
             title: "Essential Go",
-            url: "https://essential-go.programming-books.io",
+            url: "https://www.programming-books.io/essential/go/",
             description:
               "Clear and concise explanation of topics for both beginner and advanced programmers",
             icon: "🎒",
@@ -359,6 +376,10 @@ export const bookmarks: BookmarkCollection[] = [
           {
             title: "Git Documentation",
             url: "https://git-scm.com/doc",
+          },
+          {
+            title: "Go Standard Library",
+            url: "https://pkg.go.dev/std",
           },
           {
             title: "Grid visual cheatsheet",
@@ -428,6 +449,12 @@ export const bookmarks: BookmarkCollection[] = [
             url: "https://css-tricks.com/system-things",
           },
           {
+            title: "System Font Stack",
+            url: "https://systemfontstack.com/",
+            description:
+              "Most computers have good - no, great - fonts installed, and they're a great option if you want to not load a separate font.",
+          },
+          {
             title: "The rules of margin collapse",
             url: "https://joshwcomeau.com/css/rules-of-margin-collapse",
           },
@@ -454,6 +481,10 @@ export const bookmarks: BookmarkCollection[] = [
             description:
               "Google's opinionated reference for building amazing web experiences",
           },
+          {
+            title: "Web performance metrics cheatsheet",
+            url: "https://bitsofco.de/web-performance-metrics-cheatsheet/",
+          },
         ],
       },
       {
@@ -464,6 +495,12 @@ export const bookmarks: BookmarkCollection[] = [
             url: "https://cult.honeypot.io/developer-salary-report-2021",
             description:
               "13,000 data points to better understand what developers can expert to earn in Germany, the Netherlands, and Austria",
+          },
+          {
+            title: "JAMStack",
+            url: "https://jamstack.org",
+            description:
+              "Comprehensive guide for building Jamstack sites and home of the global Jamstack community",
           },
           {
             title: "Stack Overflow annual developer survey",
@@ -478,12 +515,12 @@ export const bookmarks: BookmarkCollection[] = [
           },
           {
             title: "The State of CSS survey",
-            url: "https://stateofcss.com",
+            url: "https://2021.stateofcss.com/",
             description: "The annual survey about the latest trends in CSS",
           },
           {
             title: "The State of JavaScript survey",
-            url: "https://stateofjs.com",
+            url: "https://2020.stateofjs.com/",
             description:
               "The annual survey about the latest trends in JavaScript",
           },
@@ -510,6 +547,11 @@ export const bookmarks: BookmarkCollection[] = [
               "Quickly create random, unique, and organic-looking SVG shapes",
           },
           {
+            title: "cccolor",
+            url: "https://fffuel.co/cccolor/",
+            description: "A clean & simple color picker for web designers",
+          },
+          {
             title: "Color Hunt",
             url: "http://colorhunt.co",
             description: "Color palettes for designers and artists",
@@ -520,11 +562,6 @@ export const bookmarks: BookmarkCollection[] = [
             icon: "🌓",
             description:
               "A tool to calculate the contrast ratio between any two valid CSS colors",
-          },
-          {
-            title: "Coolors.co",
-            url: "https://coolors.co",
-            description: "The super fast color schemes generator",
           },
           {
             title: "Deep learning color generator",
@@ -555,6 +592,28 @@ export const bookmarks: BookmarkCollection[] = [
               "Generate unique SVG shapes, backgrounds, and patterns",
           },
           {
+            title: "HTML Color Codes",
+            url: "https://htmlcolorcodes.com/",
+            description:
+              "Get HTML color codes, Hex color codes, RGB and HSL values",
+          },
+          {
+            title: "Icon Kitchen",
+            url: "https://icon.kitchen/",
+            description: "App icon generator",
+          },
+          {
+            title: "llline",
+            url: "https://fffuel.co/llline/",
+            description: "An SVG generator for smooth & organic lines/strokes",
+          },
+          {
+            title: "Lorem Ipsum",
+            url: "https://loremipsum.io/",
+            description:
+              "Placeholder text commonly used in the graphic, print, and publishing industries",
+          },
+          {
             title: "Photopea",
             url: "https://photopea.com",
             description: "Advanced image editor",
@@ -569,6 +628,18 @@ export const bookmarks: BookmarkCollection[] = [
             url: "https://shapedivider.app",
             description:
               "Make it easier for designers and developers to export a beautiful SVG shape divider",
+          },
+          {
+            title: "Squircley",
+            url: "https://squircley.app",
+            description:
+              "Organic shapes ready to use for logos, icons and background images",
+          },
+          {
+            title: "ssshape",
+            url: "https://fffuel.co/ssshape/",
+            description:
+              "A SVG blob/shape generator that puts you in the driver's seat",
           },
         ],
       },
@@ -770,6 +841,11 @@ export const bookmarks: BookmarkCollection[] = [
         description: "Generate custom-made Privacy Policies in seconds",
       },
       {
+        title: "SVGOMG",
+        url: "https://jakearchibald.github.io/svgomg/",
+        description: "SVGO's missing GUI",
+      },
+      {
         title: "Witeboard",
         url: "https://witeboard.com",
         description: "Shareable online whiteboard",
@@ -886,6 +962,12 @@ export const bookmarks: BookmarkCollection[] = [
         title: "Good Books",
         url: "https://goodbooks.io",
         description: "Books recommended by successful people",
+      },
+      {
+        title: "Increment",
+        url: "https://increment.com",
+        description:
+          "A magazine about how teams build and operate software systems at scale",
       },
       {
         title: "James Clear's book summaries",
