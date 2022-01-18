@@ -1,0 +1,416 @@
+[
+  {
+    "title": "Hosting & cloud",
+    "items": [
+      {
+        "title": "Deno Deploy",
+        "url": "https://deno.com/deploy",
+        "description": "Deploy Deno apps",
+        "icon": "🦕"
+      },
+      {
+        "title": "Fauna",
+        "url": "https://fauna.com",
+        "description": "Database-as-a-service",
+        "icon": "🦜"
+      },
+      {
+        "title": "Fly.io",
+        "url": "https://fly.io",
+        "description": "Host databases and full stack apps",
+        "icon": "🚀"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com",
+        "description": "Where the world builds software",
+        "icon": "🐱"
+      },
+      {
+        "title": "Hover",
+        "url": "https://hover.com",
+        "description": "Register and manage domains",
+        "icon": "🎈"
+      },
+      {
+        "title": "Netlify",
+        "url": "https://app.netlify.com",
+        "description": "Serverless platform",
+        "icon": "🟢"
+      },
+      {
+        "title": "Supabase",
+        "url": "https://supabase.io",
+        "description": "Open source Firebase alternative",
+        "icon": "⚡️"
+      },
+      {
+        "title": "Vercel",
+        "url": "https://vercel.com",
+        "description": "Serverless platform",
+        "icon": "🔺"
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "items": [
+      {
+        "title": "Analyze CSS",
+        "url": "https://www.projectwallace.com/analyze-css",
+        "description": "Get statistics on your CSS",
+        "icon": "🧐"
+      },
+      {
+        "title": "Better Placeholder",
+        "url": "https://betterplaceholder.com",
+        "description": "Placeholdit's missing UI",
+        "icon": "🌇"
+      },
+      {
+        "title": "Bundlephobia",
+        "url": "https://bundlephobia.com",
+        "description": "Find the cost of adding an npm package",
+        "icon": "😱"
+      },
+      {
+        "title": "Can I Use ...?",
+        "url": "https://caniuse.com",
+        "description": "Browser support tables",
+        "icon": "🤔"
+      },
+      {
+        "title": "Go Packages",
+        "url": "https://pkg.go.dev",
+        "description": "Registry for Go packages",
+        "icon": "📦"
+      },
+      {
+        "title": "Hoppscotch",
+        "url": "https://hoppscotch.io",
+        "description": "Open source API development ecosystem",
+        "icon": "📯"
+      },
+      {
+        "title": "JavaScript Event KeyCodes",
+        "url": "http://keycode.info",
+        "description": "Get JavaScript event keycodes",
+        "icon": "⌨️"
+      },
+      {
+        "title": "Lighthouse Report Viewer",
+        "url": "https://googlechrome.github.io/lighthouse/viewer",
+        "description": "View exported Lighthouse reports",
+        "icon": "🚨"
+      },
+      {
+        "title": "Meta Tags",
+        "url": "https://metatags.io",
+        "description": "Debug and generate meta tag code",
+        "icon": "👀"
+      },
+      {
+        "title": "npm",
+        "url": "https://npmjs.com",
+        "description": "Registry for JavaScript code sharing",
+        "icon": "📦"
+      },
+      {
+        "title": "Omatsuri",
+        "url": "https://omatsuri.app",
+        "description": "Open source browser tools",
+        "icon": "🎏"
+      },
+      {
+        "title": "PostCSS.parts",
+        "url": "https://www.postcss.parts",
+        "description": "Searchable catalog of PostCSS plugins",
+        "icon": "🧩"
+      },
+      {
+        "title": "Ray.so",
+        "url": "https://ray.so",
+        "description": "Beautiful images of your code",
+        "icon": "📸"
+      },
+      {
+        "title": "readme.so",
+        "url": "https://readme.so",
+        "description": "Create an outline for your project's readme",
+        "icon": "📃"
+      },
+      {
+        "title": "Regex 101",
+        "url": "https://regex101.com",
+        "description": "Regular expression tester",
+        "icon": "🌀"
+      },
+      {
+        "title": "Skypack",
+        "url": "https://skypack.dev",
+        "description": "Optimized npm packages without installing",
+        "icon": "🪂"
+      },
+      {
+        "title": "Snyk Open Source Advisor",
+        "url": "https://snyk.io/advisor",
+        "description": "Search and compare open source packages",
+        "icon": "🐕"
+      },
+      {
+        "title": "Stargaze",
+        "url": "https://stargaze.andreasphil.com",
+        "description": "Browse and search your stars on GitHub",
+        "icon": "🌟"
+      },
+      {
+        "title": "SVGOMG",
+        "url": "https://jakearchibald.github.io/svgomg/",
+        "description": "SVGO's missing GUI",
+        "icon": "😮"
+      },
+      {
+        "title": "UNPKG",
+        "url": "https://unpkg.com",
+        "description": "Global CDN for npm packages",
+        "icon": "🚚"
+      },
+      {
+        "title": "Web.dev Measure",
+        "url": "https://web.dev/measure",
+        "description": "Automated website audits",
+        "icon": "📐"
+      }
+    ]
+  },
+  {
+    "title": "References, guides & cheatsheets",
+    "items": [
+      {
+        "title": "Conventional Commits",
+        "url": "https://conventionalcommits.org",
+        "description": "Add meaning to commit messages",
+        "icon": "🧑‍💻"
+      },
+      {
+        "title": "Dash Dash",
+        "url": "https://dashdash.io/",
+        "description": "Beautiful Unix man pages",
+        "icon": "🖥"
+      },
+      {
+        "title": "Deep JavaScript",
+        "url": "https://exploringjs.com/deep-js/toc.html",
+        "description": "Techniques for using the language better",
+        "icon": "🤿"
+      },
+      {
+        "title": "Deno",
+        "description": "Modern JavaScript and TypeScript runtime",
+        "url": "https://deno.land",
+        "icon": "🦕"
+      },
+      {
+        "title": "Devhints",
+        "url": "https://devhints.io",
+        "description": "Collection of cheatsheets",
+        "icon": "⛅️"
+      },
+      {
+        "title": "Does it mutate?",
+        "url": "https://doesitmutate.xyz",
+        "description": "Array methods and whether they mutate",
+        "icon": "🧬"
+      },
+      {
+        "title": "ECMAScript compatibility table",
+        "url": "http://kangax.github.io/compat-table/es6",
+        "description": "Which ES features are supported where",
+        "icon": "⚙️"
+      },
+      {
+        "title": "Effective Go",
+        "url": "https://go.dev/doc/effective_go",
+        "description": "Tips for writing clear, idiomatic Go code",
+        "icon": "💆"
+      },
+      {
+        "title": "Eloquent JavaScript",
+        "url": "https://eloquentjavascript.net",
+        "description": "A book about JavaScript",
+        "icon": "🐣"
+      },
+      {
+        "title": "Essential Go",
+        "url": "https://www.programming-books.io/essential/go/",
+        "description": "Clear, concise explanations of Go concepts",
+        "icon": "🎒"
+      },
+      {
+        "title": "Flex visual cheatsheet",
+        "url": "http://flexbox.malven.co",
+        "description": "Visual cheatsheet for flexbox properties",
+        "icon": "💪"
+      },
+      {
+        "title": "Git documentation",
+        "url": "https://git-scm.com/doc",
+        "icon": "🔀"
+      },
+      {
+        "title": "Go standard library",
+        "url": "https://pkg.go.dev/std",
+        "icon": "🐰"
+      },
+      {
+        "title": "Grid visual cheatsheet",
+        "url": "http://grid.malven.co",
+        "description": "Visual cheatsheet for CSS grid properties",
+        "icon": "🪟"
+      },
+      {
+        "title": "Guide to custom properties",
+        "url": "https://css-tricks.com/a-complete-guide-to-custom-properties",
+        "icon": "🧮"
+      },
+      {
+        "title": "Guide to grid",
+        "url": "https://css-tricks.com/snippets/css/complete-guide-grid",
+        "icon": "🪟"
+      },
+      {
+        "title": "Head",
+        "url": "https://htmlhead.dev",
+        "description": "Simple guide to HTML <head> elements",
+        "icon": "🤯"
+      },
+      {
+        "title": "How to eliminate render-blocking resources",
+        "url": "https://sia.codes/posts/render-blocking-resources",
+        "icon": "🙅"
+      },
+      {
+        "title": "How to write fast, memory-efficient JavaScript",
+        "url": "https://smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript",
+        "icon": "💨"
+      },
+      {
+        "title": "Inclusive Components",
+        "url": "https://inclusive-components.design",
+        "description": "Library of accessible component patterns",
+        "icon": "🧏"
+      },
+      {
+        "title": "Introduction to JQ",
+        "url": "https://earthly.dev/blog/jq-select",
+        "icon": "🐙"
+      },
+      {
+        "title": "Keep a Changelog",
+        "url": "https://keepachangelog.com/en/1.0.0",
+        "description": "Guide for keeping useful changelogs",
+        "icon": "🌿"
+      },
+      {
+        "title": "Mozilla Developer Network",
+        "url": "https://developer.mozilla.org/en-US",
+        "description": "Web development guides and references",
+        "icon": "🦊"
+      },
+      {
+        "title": "Patterns.dev",
+        "url": "https://www.patterns.dev",
+        "description": "Modern web app design patterns",
+        "icon": "📚"
+      },
+      {
+        "title": "Rules of margin collapse",
+        "url": "https://joshwcomeau.com/css/rules-of-margin-collapse",
+        "icon": "💥"
+      },
+      {
+        "title": "Solid Start",
+        "url": "https://solidstart.info",
+        "description": "How to improve your creation for everybody",
+        "icon": "👍"
+      },
+      {
+        "title": "System Font Stack",
+        "url": "https://systemfontstack.com/",
+        "description": "CSS font stack for pre-installed fonts",
+        "icon": "🖥"
+      },
+      {
+        "title": "TypeScript",
+        "url": "https://www.typescriptlang.org",
+        "description": "Typed JavaScript at any scale",
+        "icon": "🐡"
+      },
+      {
+        "title": "Unicode Character Table",
+        "url": "https://unicode-table.com/",
+        "description": "References and tools for unicode",
+        "icon": "🔡"
+      },
+      {
+        "title": "W3Schools",
+        "url": "https://w3schools.com",
+        "description": "School for web developers",
+        "icon": "🧑‍🏫"
+      },
+      {
+        "title": "Web.dev",
+        "url": "https://web.dev",
+        "description": "Guide to the latest web technologies",
+        "icon": "🧑‍💻"
+      },
+      {
+        "title": "Web performance cheatsheet",
+        "url": "https://bitsofco.de/web-performance-metrics-cheatsheet/",
+        "description": "Breakdown of web performance metrics",
+        "icon": "🏎"
+      }
+    ]
+  },
+  {
+    "title": "State of the ecosystem & industry",
+    "items": [
+      {
+        "title": "Developer salaries report",
+        "url": "https://cult.honeypot.io/developer-salary-report-2021",
+        "description": "Developer salaries in Germany and others",
+        "icon": "💰"
+      },
+      {
+        "title": "Jamstack Community Survey",
+        "url": "https://jamstack.org/survey/2021/",
+        "description": "What's going on in the Jamstack community",
+        "icon": "🍓"
+      },
+      {
+        "title": "Stack Overflow developer survey",
+        "url": "https://insights.stackoverflow.com/survey",
+        "description": "Examines all aspects of the developer experience",
+        "icon": "🥞"
+      },
+      {
+        "title": "State of CSS survey",
+        "url": "https://2021.stateofcss.com/",
+        "description": "Annual survey about trends in CSS",
+        "icon": "🍭"
+      },
+      {
+        "title": "State of JavaScript survey",
+        "url": "https://2020.stateofjs.com/",
+        "description": "Annual survey about trends in JavaScript",
+        "icon": "🏝"
+      },
+      {
+        "title": "Technology Radar",
+        "url": "https://www.thoughtworks.com/radar",
+        "description": "An opinionated guide to technology frontiers",
+        "icon": "🗺"
+      }
+    ]
+  }
+]
