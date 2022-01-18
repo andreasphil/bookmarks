@@ -6,16 +6,16 @@ import {
   Route,
   Router,
 } from "preact-iso";
-import Home from "./pages/home";
-import NotFound from "./pages/notFound";
+import { Bookmarks, Home, NotFound } from "./components";
 
 export function App() {
   return (
-    <div className="p-4 pb-16 normal:pb-4 normal:h-screen antialiased bg-gray-50">
+    <div>
       <LocationProvider>
         <ErrorBoundary>
           <Router>
             <Route path="/" component={Home} />
+            <Route path="/:listId" component={Bookmarks} />
             <Route default component={NotFound} />
           </Router>
         </ErrorBoundary>

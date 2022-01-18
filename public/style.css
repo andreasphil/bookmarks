@@ -1,42 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-}
-
-@layer components {
-  .accordion {
-    --accordion-details-icon: 2rem;
-    --accordion-collapsed-width: calc(var(--accordion-details-icon) + 2rem);
-    @apply relative bg-white rounded;
-  }
-  .accordion[open] {
-    @apply flex-1 overflow-auto;
-  }
-  .accordion:not([open]) {
-    @apply normal:w-[var(--accordion-collapsed-width)] bg-gray-100 hover:bg-gray-200 cursor-pointer transition-colors duration-100;
-  }
-
-  .accordion > summary {
-    @apply list-none;
-  }
-  .accordion > summary::-webkit-details-marker {
-    @apply hidden;
-  }
-  .accordion[open] > summary {
-    @apply sticky top-0 bg-white bg-opacity-75 rounded-tl rounded-tr outline-none shadow-sm backdrop-blur;
-  }
-  .accordion:not([open]) > summary {
-    @apply block normal:whitespace-nowrap normal:rotate-90;
-  }
-}
-
-@layer utilities {
-  .trim > *:first-child {
-    @apply mt-0;
-  }
-  .trim > *:last-child {
-    @apply mb-0;
-  }
+body {
+  margin: auto;
+  max-width: 768px;
+  padding: 4rem 1rem 6rem;
 }
