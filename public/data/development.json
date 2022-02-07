@@ -17,7 +17,7 @@
       {
         "title": "Fly.io",
         "url": "https://fly.io",
-        "description": "Host databases and full stack apps",
+        "description": "Host databases and apps",
         "icon": "🚀"
       },
       {
@@ -36,19 +36,7 @@
         "title": "Netlify",
         "url": "https://app.netlify.com",
         "description": "Serverless platform",
-        "icon": "🟢"
-      },
-      {
-        "title": "Supabase",
-        "url": "https://supabase.io",
-        "description": "Open source Firebase alternative",
-        "icon": "⚡️"
-      },
-      {
-        "title": "Vercel",
-        "url": "https://vercel.com",
-        "description": "Serverless platform",
-        "icon": "🔺"
+        "icon": "🌍"
       }
     ]
   },
@@ -56,15 +44,9 @@
     "title": "Tools",
     "items": [
       {
-        "title": "Analyze CSS",
-        "url": "https://www.projectwallace.com/analyze-css",
-        "description": "Get statistics on your CSS",
-        "icon": "🧐"
-      },
-      {
         "title": "Better Placeholder",
         "url": "https://betterplaceholder.com",
-        "description": "Placeholdit's missing UI",
+        "description": "Placeholdit’s missing UI",
         "icon": "🌇"
       },
       {
@@ -83,7 +65,8 @@
         "title": "Go Packages",
         "url": "https://pkg.go.dev",
         "description": "Registry for Go packages",
-        "icon": "📦"
+        "icon": "📦",
+        "tags": ["golang"]
       },
       {
         "title": "Hoppscotch",
@@ -122,22 +105,16 @@
         "icon": "🎏"
       },
       {
-        "title": "PostCSS.parts",
-        "url": "https://www.postcss.parts",
-        "description": "Searchable catalog of PostCSS plugins",
-        "icon": "🧩"
+        "title": "Perflink",
+        "url": "https://perf.link/",
+        "description": "JavaScript performance benchmarks shareable via URL",
+        "icon": "🚄"
       },
       {
         "title": "Ray.so",
         "url": "https://ray.so",
         "description": "Beautiful images of your code",
         "icon": "📸"
-      },
-      {
-        "title": "readme.so",
-        "url": "https://readme.so",
-        "description": "Create an outline for your project's readme",
-        "icon": "📃"
       },
       {
         "title": "Regex 101",
@@ -161,12 +138,12 @@
         "title": "Stargaze",
         "url": "https://stargaze.andreasphil.com",
         "description": "Browse and search your stars on GitHub",
-        "icon": "🌟"
+        "icon": "✨"
       },
       {
         "title": "SVGOMG",
         "url": "https://jakearchibald.github.io/svgomg/",
-        "description": "SVGO's missing GUI",
+        "description": "SVGO’s missing GUI",
         "icon": "😮"
       },
       {
@@ -223,16 +200,17 @@
         "icon": "🧬"
       },
       {
-        "title": "ECMAScript compatibility table",
-        "url": "http://kangax.github.io/compat-table/es6",
-        "description": "Which ES features are supported where",
-        "icon": "⚙️"
-      },
-      {
         "title": "Effective Go",
         "url": "https://go.dev/doc/effective_go",
         "description": "Tips for writing clear, idiomatic Go code",
-        "icon": "💆"
+        "icon": "💆",
+        "tags": ["golang"]
+      },
+      {
+        "title": "Eliminate render-blocking resources",
+        "url": "https://sia.codes/posts/render-blocking-resources",
+        "description": "Improve page rendering speed",
+        "icon": "🙅"
       },
       {
         "title": "Eloquent JavaScript",
@@ -244,7 +222,14 @@
         "title": "Essential Go",
         "url": "https://www.programming-books.io/essential/go/",
         "description": "Clear, concise explanations of Go concepts",
-        "icon": "🎒"
+        "icon": "🎒",
+        "tags": ["golang"]
+      },
+      {
+        "title": "Fast, memory-efficient JavaScript",
+        "url": "https://smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript",
+        "description": "Optimizations and best practices",
+        "icon": "💨"
       },
       {
         "title": "Flex visual cheatsheet",
@@ -253,14 +238,17 @@
         "icon": "💪"
       },
       {
-        "title": "Git documentation",
+        "title": "Git",
         "url": "https://git-scm.com/doc",
+        "description": "Web version of Git’s man pages",
         "icon": "🔀"
       },
       {
         "title": "Go standard library",
         "url": "https://pkg.go.dev/std",
-        "icon": "🐰"
+        "description": "Documentation of Go’s standard library",
+        "icon": "🐰",
+        "tags": ["golang"]
       },
       {
         "title": "Grid visual cheatsheet",
@@ -271,11 +259,13 @@
       {
         "title": "Guide to custom properties",
         "url": "https://css-tricks.com/a-complete-guide-to-custom-properties",
+        "description": "Everything important about CSS custom propterties",
         "icon": "🧮"
       },
       {
         "title": "Guide to grid",
         "url": "https://css-tricks.com/snippets/css/complete-guide-grid",
+        "description": "Comprehensive guide to CSS grid",
         "icon": "🪟"
       },
       {
@@ -285,25 +275,10 @@
         "icon": "🤯"
       },
       {
-        "title": "How to eliminate render-blocking resources",
-        "url": "https://sia.codes/posts/render-blocking-resources",
-        "icon": "🙅"
-      },
-      {
-        "title": "How to write fast, memory-efficient JavaScript",
-        "url": "https://smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript",
-        "icon": "💨"
-      },
-      {
         "title": "Inclusive Components",
         "url": "https://inclusive-components.design",
         "description": "Library of accessible component patterns",
         "icon": "🧏"
-      },
-      {
-        "title": "Introduction to JQ",
-        "url": "https://earthly.dev/blog/jq-select",
-        "icon": "🐙"
       },
       {
         "title": "Keep a Changelog",
@@ -315,7 +290,8 @@
         "title": "Mozilla Developer Network",
         "url": "https://developer.mozilla.org/en-US",
         "description": "Web development guides and references",
-        "icon": "🦊"
+        "icon": "🦊",
+        "tags": ["mdn"]
       },
       {
         "title": "Patterns.dev",
@@ -326,6 +302,7 @@
       {
         "title": "Rules of margin collapse",
         "url": "https://joshwcomeau.com/css/rules-of-margin-collapse",
+        "description": "When do adjacent margins overlap?",
         "icon": "💥"
       },
       {
@@ -365,9 +342,9 @@
         "icon": "🧑‍💻"
       },
       {
-        "title": "Web performance cheatsheet",
+        "title": "Web performance",
         "url": "https://bitsofco.de/web-performance-metrics-cheatsheet/",
-        "description": "Breakdown of web performance metrics",
+        "description": "Cheatsheet of web performance metrics",
         "icon": "🏎"
       }
     ]
@@ -378,17 +355,17 @@
       {
         "title": "Developer salaries report",
         "url": "https://cult.honeypot.io/developer-salary-report-2021",
-        "description": "Developer salaries in Germany and others",
+        "description": "Developer salaries in Germany and elsewhere",
         "icon": "💰"
       },
       {
         "title": "Jamstack Community Survey",
         "url": "https://jamstack.org/survey/2021/",
-        "description": "What's going on in the Jamstack community",
+        "description": "What’s happening with Jamstack",
         "icon": "🍓"
       },
       {
-        "title": "Stack Overflow developer survey",
+        "title": "Stack Overflow survey",
         "url": "https://insights.stackoverflow.com/survey",
         "description": "Examines all aspects of the developer experience",
         "icon": "🥞"
@@ -401,14 +378,14 @@
       },
       {
         "title": "State of JavaScript survey",
-        "url": "https://2020.stateofjs.com/",
+        "url": "https://2021.stateofjs.com/",
         "description": "Annual survey about trends in JavaScript",
         "icon": "🏝"
       },
       {
         "title": "Technology Radar",
         "url": "https://www.thoughtworks.com/radar",
-        "description": "An opinionated guide to technology frontiers",
+        "description": "Thoughtworks’ opinionated guide to technology frontiers",
         "icon": "🗺"
       }
     ]

@@ -17,32 +17,20 @@
       {
         "title": "Contrast Ratio",
         "url": "http://contrast-ratio.com",
-        "description": "Calculate contrast ratio between two colors",
+        "description": "Calculate the contrast ratio between two colors",
         "icon": "🌓"
       },
       {
-        "title": "CSS Gradient Generator",
-        "url": "https://www.joshwcomeau.com/gradient-generator/",
-        "description": "Beautiful, lush gradients",
-        "icon": "🌈"
-      },
-      {
-        "title": "CSS Shadow Palette Generator",
-        "url": "https://www.joshwcomeau.com/shadow-palette/",
-        "description": "Create lush, realistic CSS shadows",
-        "icon": "😎"
-      },
-      {
-        "title": "Easy Colour",
-        "url": "https://easycolour.app",
-        "description": "Flexibe color conversion and variation tool",
-        "icon": "🎨"
+        "title": "fffuel",
+        "url": "https://fffuel.co",
+        "description": "Collection of free SVG generators",
+        "icon": "⛽️"
       },
       {
         "title": "Favicon.io",
         "url": "https://favicon.io",
         "description": "The only favicon generator you need",
-        "icon": "🌍"
+        "icon": "💟"
       },
       {
         "title": "Figma",
@@ -53,14 +41,20 @@
       {
         "title": "Fluid Type Scale",
         "url": "https://www.fluid-type-scale.com",
-        "description": "Generate font sizes with CSS clamp",
+        "description": "Generate fluid font sizes with CSS clamp",
         "icon": "📝"
       },
       {
-        "title": "Get Waves",
-        "url": "https://getwaves.io",
-        "description": "Free SVG wave generator",
-        "icon": "🌊"
+        "title": "Gradient Generator",
+        "url": "https://www.joshwcomeau.com/gradient-generator/",
+        "description": "Beautiful, lush CSS gradients",
+        "icon": "🌈"
+      },
+      {
+        "title": "hue.tools",
+        "url": "https://hue.tools/",
+        "description": "Open source toolbox for colors",
+        "icon": "🎨"
       },
       {
         "title": "Icon Kitchen",
@@ -69,16 +63,10 @@
         "icon": "🧑‍🍳"
       },
       {
-        "title": "llline",
-        "url": "https://fffuel.co/llline/",
-        "description": "Generator for smooth and organic lines",
-        "icon": "📐"
-      },
-      {
-        "title": "Lorem Ipsum",
-        "url": "https://loremipsum.io/",
-        "description": "Placeholder text generator",
-        "icon": "💬"
+        "title": "Material Theme Builder",
+        "url": "https://material-foundation.github.io/material-theme-builder/",
+        "description": "Visualize and build custom themes",
+        "icon": "🌺"
       },
       {
         "title": "Minimator",
@@ -99,16 +87,22 @@
         "icon": "🌇"
       },
       {
+        "title": "Shadow Palette Generator",
+        "url": "https://www.joshwcomeau.com/shadow-palette/",
+        "description": "Create lush, realistic CSS shadows",
+        "icon": "😎"
+      },
+      {
         "title": "Squircley",
         "url": "https://squircley.app",
         "description": "Squircle generator",
-        "icon": "🟦"
+        "icon": "⏺"
       },
       {
-        "title": "ssshape",
-        "url": "https://fffuel.co/ssshape/",
-        "description": "Blob and organic shape generator",
-        "icon": "🔴"
+        "title": "tldraw",
+        "url": "https://www.tldraw.com/",
+        "description": "Tiny little drawing app",
+        "icon": "️✏️"
       }
     ]
   },
@@ -124,7 +118,7 @@
       {
         "title": "Color Hunt",
         "url": "http://colorhunt.co",
-        "description": "Color palettes",
+        "description": "Handpicked color palettes",
         "icon": "🏹"
       },
       {
@@ -134,34 +128,16 @@
         "icon": "🌈"
       },
       {
-        "title": "Devices by Facebook Design",
-        "url": "https://design.facebook.com/toolsandresources/devices/",
-        "description": "Images and Sketch files of popular devices",
-        "icon": "📱"
-      },
-      {
         "title": "Dribbble",
         "url": "https://dribbble.com",
         "description": "Find and showcase creative work",
         "icon": "🏀"
       },
       {
-        "title": "Feather",
-        "url": "https://feathericons.com",
-        "description": "Simply beautiful open source icons",
-        "icon": "🪶"
-      },
-      {
         "title": "Google Fonts",
         "url": "https://google.com/fonts",
         "description": "Typography and iconography for the web",
         "icon": "⛲️"
-      },
-      {
-        "title": "Gridzzly",
-        "url": "http://gridzzly.com",
-        "description": "Make your own grid paper",
-        "icon": "🧸"
       },
       {
         "title": "Hero Patterns",
@@ -178,20 +154,20 @@
       {
         "title": "Iconoir",
         "url": "https://iconoir.com",
-        "description": "One of the biggest open source libraries",
+        "description": "One of the biggest open source icon libraries",
         "icon": "🔵"
-      },
-      {
-        "title": "illlustrations",
-        "url": "https://illlustrations.co",
-        "description": "Open source illustrations kit",
-        "icon": "✏️"
       },
       {
         "title": "Ionicons",
         "url": "https://ionic.io/ionicons",
         "description": "Premium designed icons",
         "icon": "☢️"
+      },
+      {
+        "title": "Lucide",
+        "url": "https://lucide.dev",
+        "description": "Beautiful and consistent open source icons",
+        "icon": "🪶"
       },
       {
         "title": "Mesh Gradients",
@@ -208,7 +184,7 @@
       {
         "title": "Simple Icons",
         "url": "https://simpleicons.org",
-        "description": "Free SVG icons for popular brands",
+        "description": "Free icons for popular brands",
         "icon": "🔥"
       },
       {
@@ -241,9 +217,9 @@
     "title": "Design systems & guides",
     "items": [
       {
-        "title": "Apple's Interface Guidelines",
+        "title": "Apple’s Interface Guidelines",
         "url": "https://developer.apple.com/design/human-interface-guidelines/",
-        "description": "Integrate seamlessly with Apple platforms",
+        "description": "Integrate with Apple platforms",
         "icon": "🍎"
       },
       {
@@ -261,8 +237,8 @@
       {
         "title": "Heroku design",
         "url": "https://design.herokai.com",
-        "description": "Heroku's design system",
-        "icon": "🎏"
+        "description": "Heroku’s design system",
+        "icon": "🍣"
       },
       {
         "title": "Humane by design",
@@ -279,14 +255,14 @@
       {
         "title": "Material You",
         "url": "https://m3.material.io",
-        "description": "Google's design system",
+        "description": "Google’s design system",
         "icon": "🌺"
       },
       {
         "title": "Vercel design",
         "url": "https://vercel.com/design",
-        "description": "Vercel's design system",
-        "icon": "🔺"
+        "description": "Vercel’s design system",
+        "icon": "⏳"
       }
     ]
   }

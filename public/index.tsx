@@ -2,30 +2,25 @@ import {
   ErrorBoundary,
   hydrate,
   LocationProvider,
-  prerender as ssr,
   Route,
   Router,
 } from "preact-iso";
-import { Bookmarks, Home, NotFound } from "./components";
+import { Bookmarks, Home, NotFound } from "./components/pages";
+import "finecss/dist/index.min.css";
+import "./style.css";
 
 export function App() {
   return (
-    <div>
-      <LocationProvider>
-        <ErrorBoundary>
-          <Router>
-            <Route path="/" component={Home} />
-            <Route path="/:listId" component={Bookmarks} />
-            <Route default component={NotFound} />
-          </Router>
-        </ErrorBoundary>
-      </LocationProvider>
-    </div>
+    <LocationProvider>
+      <ErrorBoundary>
+        <Router>
+          <Route path="/" component={Home} />
+          <Route path="/:listId" component={Bookmarks} />
+          <Route default component={NotFound} />
+        </Router>
+      </ErrorBoundary>
+    </LocationProvider>
   );
 }
 
 hydrate(<App />);
-
-export async function prerender(data) {
-  return await ssr(<App {...data} />);
-}

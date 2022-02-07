@@ -1,6 +1,5 @@
 .cache
 dist
 node_modules
-public/tailwind.css
+public/data/_*
 stats.html
-yarn-error.log
