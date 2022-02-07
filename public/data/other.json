@@ -1,5 +1,6 @@
 [
   {
+    "title": "Resources",
     "items": [
       {
         "title": "80,000 Hours",
@@ -8,9 +9,9 @@
         "icon": "⛑"
       },
       {
-        "title": "Basecamp's communication guidelines",
+        "title": "Basecamp’s communication guidelines",
         "url": "https://basecamp.com/guides/how-we-communicate",
-        "description": "Basecamp's guide to internal communication",
+        "description": "Guide to internal communication",
         "icon": "💬"
       },
       {
@@ -52,7 +53,7 @@
       {
         "title": "Shape Up",
         "url": "https://basecamp.com/shapeup/webbook",
-        "description": "Basecamp's product process",
+        "description": "Basecamp’s product development process",
         "icon": "🏃‍♂️"
       },
       {
@@ -70,7 +71,7 @@
     ]
   },
   {
-    "title": "Other tools",
+    "title": "Tools",
     "items": [
       {
         "title": "CloudConvert",
@@ -79,10 +80,22 @@
         "icon": "️⛅️"
       },
       {
+        "title": "Gridzzly",
+        "url": "http://gridzzly.com",
+        "description": "Make your own grid paper",
+        "icon": "🧸"
+      },
+      {
         "title": "LanguageTool",
         "url": "https://languagetool.org",
         "description": "Multilingual grammar, style, and spell checker",
         "icon": "🙊"
+      },
+      {
+        "title": "Nitter",
+        "url": "https://nitter.net",
+        "description": "Alternative Twitter frontend",
+        "icon": "🐦"
       },
       {
         "title": "Paste to Markdown",
@@ -95,6 +108,12 @@
         "url": "https://privacypolicies.com",
         "description": "Generate custom-made Privacy Policies",
         "icon": "👩‍⚖️"
+      },
+      {
+        "title": "Scribe",
+        "url": "https://scribe.rip",
+        "description": "Alternative Medium frontend",
+        "icon": "📰"
       },
       {
         "title": "Witeboard",

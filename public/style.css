@@ -1,5 +1,207 @@
-body {
-  margin: auto;
-  max-width: 768px;
-  padding: 4rem 1rem 6rem;
+:root {
+  --body-padding-x: 1.5rem;
+  --body-padding-y: 0;
+  --border-width: 2px;
+  --h-text-transform: capitalize;
+
+  --c-favorite: hsl(340 82% 50%);
+}
+
+.text-c-variant {
+  color: var(--c-fg-variant);
+}
+
+/* -------------------------------------------------- *
+ * Header                                             *
+ * -------------------------------------------------- */
+
+header {
+  --svg-height: calc(var(--line-height) * 1em);
+  display: flex;
+  flex-direction: column;
+  height: clamp(16rem, 50vh, 24rem);
+  justify-content: center;
+}
+
+header button {
+  /* Align spacing with links */
+  --border-width: 0px;
+  --button-padding-x: 0.5rem;
+  --button-padding-y: 0.375rem;
+
+  color: var(--c-fg-variant);
+}
+
+header[f-container] {
+  --container-padding-y: 3rem;
+}
+
+.header__divider {
+  background: var(--c-border);
+  margin: 0 0.375rem;
+  width: var(--border-width);
+}
+
+.header__item--favorite {
+  --link-color: var(--c-favorite);
+}
+
+.page-title {
+  margin-top: 0.5rem;
+}
+
+/* -------------------------------------------------- *
+ * Footer                                             *
+ * -------------------------------------------------- */
+
+footer {
+  align-items: center;
+  color: var(--c-fg-variant);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer[f-container] {
+  --container-padding-y: 5rem;
+}
+
+/* -------------------------------------------------- *
+ * Bookmarks                                          *
+ * -------------------------------------------------- */
+
+.bookmark-group-title {
+  --h-font-size: var(--h3-font-size);
+  margin-top: 3em;
+}
+
+.bookmarks {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 58rem) {
+    margin: 0 -1rem;
+  }
+}
+
+.bookmarks li {
+  list-style-type: none;
+  margin-top: 0;
+}
+.bookmarks--with-placeholders li {
+  aspect-ratio: 4/3;
+  border-radius: var(--large-border-radius);
+  border: var(--border-width) dashed var(--c-border);
+  padding: 1rem;
+}
+
+.bookmarks a {
+  background: var(--c-surface-bg);
+  border-radius: var(--large-border-radius);
+  border: var(--border-width) solid transparent;
+  box-shadow: var(--medium-shadow-elevation);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  outline: none;
+  padding: 1rem;
+  text-decoration: none;
+}
+.bookmarks a:is(:hover, :focus) {
+  border-color: var(--c-primary);
+}
+.bookmarks__icon {
+  font-size: var(--h3-font-size);
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookmarks__title {
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+.bookmarks__favorite {
+  --favorite-button-size: calc(var(--font-size) * 1.75);
+  --svg-height: var(--font-size);
+  --button-fg: var(--c-fg-variant);
+  align-items: center;
+  display: flex;
+  height: var(--favorite-button-size);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: var(--favorite-button-size);
+}
+.bookmarks__favorite:is(.bookmarks__favorite--active) {
+  --button-fg: var(--c-favorite);
+}
+
+/* -------------------------------------------------- *
+ * Search dialog                                      *
+ * -------------------------------------------------- */
+
+.search-dialog {
+  --dialog-max-width: 30rem;
+  --dialog-padding-x: 0;
+  --dialog-padding-y: 0;
+  margin-top: 100px;
+}
+
+.search-dialog input {
+  --input-bg: transparent;
+  --input-focus-color: transparent;
+  border: none;
+  padding: 1.5rem 1.5rem;
+}
+
+.search-dialog ul {
+  margin: 0;
+  max-height: 22rem;
+  overflow: auto;
+  padding: 0 0 0.75rem 0;
+}
+.search-dialog li {
+  list-style-type: none;
+  margin: 0;
+}
+.search-dialog li a {
+  --border-width: 3px;
+  align-items: center;
+  border-left: var(--border-width) solid var(--link-border-color, transparent);
+  display: flex;
+  gap: 1.5rem;
+  outline: none;
+  padding: 0.6125rem calc(1.5rem - var(--border-width));
+  text-decoration: none;
+  transition-property: background-color, color;
+}
+.search-dialog li a:hover {
+  --link-border-color: var(--c-border);
+}
+.search-dialog li a:is(:focus, .focus) {
+  --link-border-color: var(--c-primary);
+}
+
+.search-dialog__icon {
+  flex: none;
+  font-size: var(--h3-font-size);
+}
+.search-dialog__text > * {
+  display: block;
+}
+
+.search-dialog__empty {
+  padding: 2.5rem 1.5rem;
+  border: var(--border-width) dashed var(--c-border);
+  margin: 0 1.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+.search-dialog__empty :is(h3, p) {
+  margin: 0.5rem 0;
 }
