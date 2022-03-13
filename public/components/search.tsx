@@ -17,6 +17,7 @@ export const Search: FunctionComponent<SearchProps> = ({
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Bookmark[]>([]);
   const [focusedResult, setFocusedResult] = useState(0);
+  const [dialogIsOpen, setDialogIsOpen] = useState(visible);
   const dialogRef = useRef(null);
 
   useEffect(() => {
@@ -37,9 +38,16 @@ export const Search: FunctionComponent<SearchProps> = ({
   }, []);
 
   useEffect(() => {
-    // Sync dialog state with visibility
-    if (visible) dialogRef.current.showModal();
-    else dialogRef.current.close();
+    // Toggle the dialog when visibility changes. Need to double check with
+    // the dialogIsOpen flag because attempting to close a closed dialog or
+    // open an opened dialog will throw an exception in some browsers.
+    if (visible && !dialogIsOpen) {
+      dialogRef.current.showModal();
+      setDialogIsOpen(true);
+    } else if (!visible && dialogIsOpen) {
+      dialogRef.current.close();
+      setDialogIsOpen(false);
+    }
 
     // Manage the hotkey for opening the search modal
     const onSearchHotkey = (event: KeyboardEvent) => {
@@ -52,6 +60,12 @@ export const Search: FunctionComponent<SearchProps> = ({
     window.addEventListener("keydown", onSearchHotkey);
     return () => window.removeEventListener("keydown", onSearchHotkey);
   }, [visible]);
+
+  // Sync dialog state with visibility
+  const onDialogClose = () => {
+    setDialogIsOpen(false);
+    setVisible(false);
+  };
 
   // Updates the search query on inputs.
   const onSearch = (event: Event) => {
@@ -130,11 +144,7 @@ export const Search: FunctionComponent<SearchProps> = ({
   }
 
   return (
-    <dialog
-      className="search-dialog"
-      onClose={() => setVisible(false)}
-      ref={dialogRef}
-    >
+    <dialog className="search-dialog" onClose={onDialogClose} ref={dialogRef}>
       <input onInput={onSearch} placeholder="Search for ..." value={query} />
       {resultsEl}
     </dialog>
