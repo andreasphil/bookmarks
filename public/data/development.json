@@ -81,6 +81,12 @@
         "icon": "⌨️"
       },
       {
+        "title": "jsDelivr",
+        "url": "https://www.jsdelivr.com",
+        "description": "Fast, reliable, and free CDN for open source",
+        "icon": "🚛"
+      },
+      {
         "title": "Lighthouse Report Viewer",
         "url": "https://googlechrome.github.io/lighthouse/viewer",
         "description": "View exported Lighthouse reports",
@@ -133,6 +139,12 @@
         "url": "https://snyk.io/advisor",
         "description": "Search and compare open source packages",
         "icon": "🐕"
+      },
+      {
+        "title": "Socket",
+        "url": "https://socket.dev",
+        "description": "Check open source dependencies for malicious content",
+        "icon": "😈"
       },
       {
         "title": "Stargaze",
