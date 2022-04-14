@@ -62,6 +62,13 @@
         "icon": "🤔"
       },
       {
+        "title": "esm.sh",
+        "url": "https://esm.sh",
+        "description": "Fast, global CDN for NPM packages with ES Module format",
+        "icon": "🚐",
+        "tags": ["cdn"]
+      },
+      {
         "title": "Go Packages",
         "url": "https://pkg.go.dev",
         "description": "Registry for Go packages",
@@ -84,7 +91,8 @@
         "title": "jsDelivr",
         "url": "https://www.jsdelivr.com",
         "description": "Fast, reliable, and free CDN for open source",
-        "icon": "🚛"
+        "icon": "🚛",
+        "tags": ["cdn"]
       },
       {
         "title": "Lighthouse Report Viewer",
@@ -132,7 +140,8 @@
         "title": "Skypack",
         "url": "https://skypack.dev",
         "description": "Optimized npm packages without installing",
-        "icon": "🪂"
+        "icon": "🪂",
+        "tags": ["cdn"]
       },
       {
         "title": "Snyk Open Source Advisor",
@@ -159,10 +168,18 @@
         "icon": "😮"
       },
       {
+        "title": "JSPM",
+        "url": "https://jspm.org",
+        "description": "CDN and package management for import maps",
+        "icon": "📍",
+        "tags": ["cdn"]
+      },
+      {
         "title": "UNPKG",
         "url": "https://unpkg.com",
         "description": "Global CDN for npm packages",
-        "icon": "🚚"
+        "icon": "🚚",
+        "tags": ["cdn"]
       },
       {
         "title": "Web.dev Measure",
