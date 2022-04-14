@@ -38,6 +38,13 @@
         "icon": "⛺️"
       },
       {
+        "title": "iOS App Dev Tutorials",
+        "url": "https://developer.apple.com/tutorials/app-dev-training/",
+        "description": "Learn the basics of Xcode, SwiftUI, and UIKit",
+        "icon": "📱",
+        "tags": ["swift"]
+      },
+      {
         "title": "Khan Academy",
         "url": "https://khanacademy.org",
         "description": "Free, world-class education for anyone",
@@ -54,6 +61,13 @@
         "url": "https://recurse.com",
         "description": "Educational retreat for programmers",
         "icon": "👾"
+      },
+      {
+        "title": "SwiftUI Tutorials",
+        "url": "https://developer.apple.com/tutorials/swiftui/",
+        "description": "A modern way to declare user interfaces for any Apple platform",
+        "icon": "💻",
+        "tags": ["swift"]
       },
       {
         "title": "Upcase",

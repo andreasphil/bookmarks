@@ -176,6 +176,13 @@
     "title": "References, guides & cheatsheets",
     "items": [
       {
+        "title": "Apple Developer Docs",
+        "url": "https://developer.apple.com/documentation/technologies",
+        "description": "API references, tutorials, and articles about Apple technologies",
+        "icon": "🍏",
+        "tags": ["swift"]
+      },
+      {
         "title": "Conventional Commits",
         "url": "https://conventionalcommits.org",
         "description": "Add meaning to commit messages",
@@ -328,6 +335,13 @@
         "url": "https://systemfontstack.com/",
         "description": "CSS font stack for pre-installed fonts",
         "icon": "🖥"
+      },
+      {
+        "title": "Swift Book",
+        "url": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html",
+        "description": "The Swift language guide",
+        "icon": "🦩",
+        "tags": ["swift"]
       },
       {
         "title": "TypeScript",
