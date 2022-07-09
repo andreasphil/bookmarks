@@ -64,7 +64,7 @@
       {
         "title": "esm.sh",
         "url": "https://esm.sh",
-        "description": "Fast, global CDN for NPM packages with ES Module format",
+        "description": "Fast, global CDN for npm packages with ES Module format",
         "icon": "🚐",
         "tags": ["cdn"]
       },
@@ -340,6 +340,12 @@
         "url": "https://joshwcomeau.com/css/rules-of-margin-collapse",
         "description": "When do adjacent margins overlap?",
         "icon": "💥"
+      },
+      {
+        "title": "Semver",
+        "url": "https://semver.org",
+        "description": "Simple rules for assigning version numbers",
+        "icon": "🚥"
       },
       {
         "title": "Solid Start",
