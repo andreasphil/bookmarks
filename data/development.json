@@ -249,12 +249,6 @@
         "icon": "🙅"
       },
       {
-        "title": "Eloquent JavaScript",
-        "url": "https://eloquentjavascript.net",
-        "description": "A book about JavaScript",
-        "icon": "🐣"
-      },
-      {
         "title": "Essential Go",
         "url": "https://www.programming-books.io/essential/go/",
         "description": "Clear, concise explanations of Go concepts",

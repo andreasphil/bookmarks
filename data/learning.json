@@ -14,10 +14,22 @@
         "icon": "🧫"
       },
       {
+        "title": "Crafting interpreters",
+        "url": "https://craftinginterpreters.com",
+        "description": "Implement a full-featured, efficient scripting language",
+        "icon": "📜"
+      },
+      {
         "title": "Developer Roadmaps",
         "url": "https://roadmap.sh",
         "description": "Paths for learning different technologies",
         "icon": "📍"
+      },
+      {
+        "title": "Eloquent JavaScript",
+        "url": "https://eloquentjavascript.net",
+        "description": "A book about JavaScript",
+        "icon": "🐣"
       },
       {
         "title": "Exercism",
