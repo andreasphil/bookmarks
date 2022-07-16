@@ -81,8 +81,9 @@ footer[f-container] {
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   margin: 0;
   padding: 0;
-
-  @media (min-width: 58rem) {
+}
+@media (min-width: 58rem) {
+  .bookmarks {
     margin: 0 -1rem;
   }
 }

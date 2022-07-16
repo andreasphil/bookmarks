@@ -1,5 +1,0 @@
-.cache
-dist
-node_modules
-public/data/_*
-stats.html

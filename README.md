@@ -7,28 +7,26 @@
 </p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/dev-bookmarks/deploys" title="Netlify Status">
-    <img src="https://api.netlify.com/api/v1/badges/a6e102eb-cc62-484c-b15b-f0f3ff75d598/deploy-status" alt="Netlify Status" />
+  <a href="https://deno.com/deploy" title="Deno Deploy">
+    <img src="https://img.shields.io/badge/hosted%20on-Deno%20Deploy-026BEB.svg?logo=deno&labelColor=black&style=for-the-badge" alt="Hosted on Deno Deploy" />
   </a>
 </p>
 
 ## Development
 
-The site is a Preact app built with [WMR](https://wmr.dev). Bookmarks are stored in `public/data`.
+The site is a Preact app built with [Fresh](https://fresh.deno.dev). Bookmarks are stored in `/data`. To start the server:
 
 ```sh
-npm install     # Install dependencies
-npm start       # Start development server
-npm run build   # Bundle for production
+deno task start       # Start development server
 ```
 
-## Deploy to Netlify
+## Deploy to Deno
 
-Deployment to Netlify is configured in the [netlify.toml file](netlify.toml) and should work out of the box.
+Deployment should work out of the box when linking the repository to a project on [Deno Deploy](https://deno.com).
 
 ## Credits
 
-Apart from the open source packages listed in [package.json](package.json), Bookmarks uses:
+Apart from the open source packages listed in [import_map.json](import_map.json), Bookmarks uses:
 
 - Icons from [Simple Icons](https://simpleicons.org/) and [Lucide](https://lucide.dev/)
 - Favicons generated with [IconKitchen](https://icon.kitchen/)

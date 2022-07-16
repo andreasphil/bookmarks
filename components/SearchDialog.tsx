@@ -1,40 +1,34 @@
-/* -------------------------------------------------- *
- * SEARCH                                             *
- * -------------------------------------------------- */
-
-import dialogPolyfill from "dialog-polyfill";
-import createSearch from "js-inverted-index";
-import { FunctionComponent } from "preact";
+/** @jsx h */
+import createSearch from "js-inverted-index/index.ts";
+import type { Search, SearchIndexDump } from "js-inverted-index/types.ts";
+import { h } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
-import { Bookmark } from "../lib";
+import type { Bookmark } from "../utils/lib.ts";
 
-type SearchProps = { visible: boolean; onSetVisible: (value: boolean) => void };
-export const Search: FunctionComponent<SearchProps> = ({
-  visible,
-  onSetVisible: setVisible,
-}) => {
-  const [searchFn, setSearchFn] = useState<(term: string) => [] | undefined>();
+type SearchFn = Search<Bookmark>["search"] | undefined;
+
+export default function SearchDialog(props: {
+  visible: boolean;
+  onSetVisible: (value: boolean) => void;
+}) {
+  const { visible, onSetVisible: setVisible } = props;
+  const [searchFn, setSearchFn] = useState<SearchFn>();
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Bookmark[]>([]);
   const [focusedResult, setFocusedResult] = useState(0);
   const [dialogIsOpen, setDialogIsOpen] = useState(visible);
-  const dialogRef = useRef(null);
-
-  useEffect(() => {
-    dialogPolyfill.registerDialog(dialogRef.current);
-  }, []);
+  const dialogRef = useRef<HTMLDialogElement>(null);
 
   // Fetches the pre-generated results and documents lists from the server and
   // initalizes the search client
   useEffect(() => {
-    Promise.all([
-      fetch("/data/_all.json").then((r) => r.json()),
-      fetch("/data/_search.json").then((r) => r.json()),
-    ]).then(([documents, index]) => {
-      const { search: searchFn, hydrate } = createSearch();
-      hydrate(index, documents);
-      setSearchFn(() => searchFn);
-    });
+    fetch("/api/search")
+      .then((r) => r.json())
+      .then((r: { documents: Bookmark[]; index: SearchIndexDump }) => {
+        const { search: searchFn, hydrate } = createSearch<Bookmark>();
+        hydrate(r.index, r.documents);
+        setSearchFn(() => searchFn);
+      });
   }, []);
 
   useEffect(() => {
@@ -42,10 +36,10 @@ export const Search: FunctionComponent<SearchProps> = ({
     // the dialogIsOpen flag because attempting to close a closed dialog or
     // open an opened dialog will throw an exception in some browsers.
     if (visible && !dialogIsOpen) {
-      dialogRef.current.showModal();
+      dialogRef.current?.showModal();
       setDialogIsOpen(true);
     } else if (!visible && dialogIsOpen) {
-      dialogRef.current.close();
+      dialogRef.current?.close();
       setDialogIsOpen(false);
     }
 
@@ -57,8 +51,8 @@ export const Search: FunctionComponent<SearchProps> = ({
       }
     };
 
-    window.addEventListener("keydown", onSearchHotkey);
-    return () => window.removeEventListener("keydown", onSearchHotkey);
+    addEventListener("keydown", onSearchHotkey);
+    return () => removeEventListener("keydown", onSearchHotkey);
   }, [visible]);
 
   // Sync dialog state with visibility
@@ -107,8 +101,8 @@ export const Search: FunctionComponent<SearchProps> = ({
       if (handled) event.preventDefault();
     };
 
-    window.addEventListener("keydown", onFocusMoved);
-    return () => window.removeEventListener("keydown", onFocusMoved);
+    addEventListener("keydown", onFocusMoved);
+    return () => removeEventListener("keydown", onFocusMoved);
   }, [visible, focusedResult, results]);
 
   // Results list or empty state if the query didn't lead to any results
@@ -119,7 +113,7 @@ export const Search: FunctionComponent<SearchProps> = ({
         {results.map((bookmark, i) => (
           <li key={bookmark.url}>
             <a
-              className={i === focusedResult ? "focus" : null}
+              className={i === focusedResult ? "focus" : undefined}
               f-transition
               href={bookmark.url}
               onFocus={() => setFocusedResult(i)}
@@ -149,4 +143,4 @@ export const Search: FunctionComponent<SearchProps> = ({
       {resultsEl}
     </dialog>
   );
-};
+}
