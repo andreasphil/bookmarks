@@ -21,7 +21,7 @@ function BookmarkListItem(
     <li>
       <a
         className={clsx({ favorite: props.isFavorite })}
-        f-transition
+        data-fine-transition
         href={props.url}
         title={props.title}
       >
@@ -31,7 +31,7 @@ function BookmarkListItem(
             className={clsx("bookmarks__favorite", {
               "bookmarks__favorite--active": props.isFavorite,
             })}
-            f-ghost
+            data-fine-button="ghost"
             onClick={onFavoriteClick}
             title={`Mark ${props.title} as favorite`}
             disabled={!IS_BROWSER}

@@ -28,7 +28,7 @@ function HeaderNavItem(
     <li>
       <a
         className={props.color ? `header__item--${props.color}` : undefined}
-        f-active={props.isActive ? true : null}
+        data-fine-link={props.isActive ? "active" : null}
         href={props.to}
         title={props.title}
       >
@@ -68,7 +68,7 @@ export default function Header({ title, url }: { title: string; url: string }) {
   const [searchVisible, setSearchVisible] = useState(false);
 
   return (
-    <header f-container>
+    <header data-fine-container>
       {IS_BROWSER ? (
         <SearchDialog visible={searchVisible} onSetVisible={setSearchVisible} />
       ) : null}
@@ -79,15 +79,15 @@ export default function Header({ title, url }: { title: string; url: string }) {
       <HeaderNav>
         <li>
           <button
-            f-ghost
-            onClick={() => setSearchVisible(true)}
+            data-fine-button="ghost"
             disabled={!IS_BROWSER}
+            onClick={() => setSearchVisible(true)}
             title="Search"
           >
             <SearchIcon />
           </button>
         </li>
-        <li className="header__divider" f-transition></li>
+        <li className="header__divider" data-fine-transition></li>
         <HeaderNavItem
           to="/"
           title="Favorites"

@@ -5,7 +5,7 @@ import { GitHubIcon } from "./Icons.tsx";
 
 export default function Footer() {
   return (
-    <footer f-container>
+    <footer data-fine-container>
       <small>
         A thing made by <a href={META.authorWebsite}>{META.authorName}.</a>
       </small>

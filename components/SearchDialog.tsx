@@ -114,7 +114,7 @@ export default function SearchDialog(props: {
           <li key={bookmark.url}>
             <a
               className={i === focusedResult ? "focus" : undefined}
-              f-transition
+              data-fine-transition
               href={bookmark.url}
               onFocus={() => setFocusedResult(i)}
             >
@@ -130,7 +130,7 @@ export default function SearchDialog(props: {
     );
   } else if (query) {
     resultsEl = (
-      <div className="search-dialog__empty" f-trim="both">
+      <div className="search-dialog__empty" data-fine-trim="both">
         <h3>😵‍💫</h3>
         <p className="text-c-variant">Sorry, couldn&rsquo;t find anything.</p>
       </div>
