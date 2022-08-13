@@ -256,6 +256,12 @@
         "tags": ["golang"]
       },
       {
+        "title": "Default exports in JavaScript",
+        "url": "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default/",
+        "description": "\"export default thing\" is different to \"export { thing as default }\"",
+        "icon": "🎪"
+      },
+      {
         "title": "Fast, memory-efficient JavaScript",
         "url": "https://smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript",
         "description": "Optimizations and best practices",
