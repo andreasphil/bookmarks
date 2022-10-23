@@ -95,6 +95,12 @@
         "tags": ["cdn"]
       },
       {
+        "title": "JSON Hero",
+        "url":"https://jsonhero.io",
+        "description": "Browser-based JSON viewer",
+        "icon": "🦸"
+      },
+      {
         "title": "Lighthouse Report Viewer",
         "url": "https://googlechrome.github.io/lighthouse/viewer",
         "description": "View exported Lighthouse reports",
@@ -357,6 +363,12 @@
         "title": "System Font Stack",
         "url": "https://systemfontstack.com/",
         "description": "CSS font stack for pre-installed fonts",
+        "icon": "📘"
+      },
+      {
+        "title": "System *Things",
+        "url": "https://css-tricks.com/system-things/",
+        "description": "CSS properties that refer to system colors, fonts, etc.",
         "icon": "🖥"
       },
       {
