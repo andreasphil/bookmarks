@@ -10,7 +10,6 @@ import { BOOKMARKS } from "../utils/lib.ts";
 
 export const handler: Handlers<Bookmarks | null> = {
   async GET(_, context) {
-    // TODO: Error page
     const { list } = context.params;
     const listMeta = BOOKMARKS.find((i) => i.id === list);
     let bookmarks: Bookmarks | null = null;

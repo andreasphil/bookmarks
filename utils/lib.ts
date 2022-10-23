@@ -112,7 +112,7 @@ export function useFavorites() {
 
 /**
  * Returns a hook that implements the same interface as the favorites hook
- * above, but doesn't actually to anything, to it's safe to run in SSR
+ * above, but doesn't actually to anything, so it's safe to run in SSR
  * contexts.
  */
 export function useNoopFavorites(): ReturnType<typeof useFavorites> {

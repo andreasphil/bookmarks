@@ -2,7 +2,7 @@
 import { h } from "preact";
 
 /* -------------------------------------------------- *
- * From Simple Icons: https://simpleicons.org          *
+ * From Simple Icons: https://simpleicons.org         *
  * -------------------------------------------------- */
 
 export function GitHubIcon() {
