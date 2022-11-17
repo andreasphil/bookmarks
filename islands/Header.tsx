@@ -7,14 +7,6 @@ import { HeartIcon, SearchIcon } from "../components/Icons.tsx";
 import SearchDialog from "../components/SearchDialog.tsx";
 import { BOOKMARKS, META } from "../utils/lib.ts";
 
-function HeaderNav({ children }: RenderableProps<unknown>) {
-  return (
-    <nav>
-      <ul>{children}</ul>
-    </nav>
-  );
-}
-
 function HeaderNavItem(
   props: RenderableProps<{
     to: string;
@@ -28,7 +20,7 @@ function HeaderNavItem(
     <li>
       <a
         className={props.color ? `header__item--${props.color}` : undefined}
-        data-fine-link={props.isActive ? "active" : null}
+        data-active={props.isActive}
         href={props.to}
         title={props.title}
       >
@@ -68,43 +60,53 @@ export default function Header({ title, url }: { title: string; url: string }) {
   const [searchVisible, setSearchVisible] = useState(false);
 
   return (
-    <header data-fine-container>
+    <header data-container data-trim="top" className="header">
+      <hgroup>
+        <p>
+          <strong>{META.title}</strong>
+        </p>
+        <h1>{title}</h1>
+      </hgroup>
+      <nav>
+        <ul>
+          <li>
+            <button
+              className="header__button"
+              data-variant="ghost"
+              disabled={!IS_BROWSER}
+              onClick={() => setSearchVisible(true)}
+              title="Search"
+            >
+              <SearchIcon />
+            </button>
+          </li>
+
+          <li className="header__divider"></li>
+
+          {/* Favorites */}
+          <HeaderNavItem
+            to="/"
+            title="Favorites"
+            color="favorite"
+            isActive={"/" === url}
+          >
+            <HeartIcon />
+          </HeaderNavItem>
+
+          {/* All other collections */}
+          {BOOKMARKS.map((list) => (
+            <HeaderNavItem
+              to={`/${list.id}`}
+              isActive={`/${list.id}` === url}
+              label={list.title}
+              title={list.title}
+            />
+          ))}
+        </ul>
+      </nav>
       {IS_BROWSER ? (
         <SearchDialog visible={searchVisible} onSetVisible={setSearchVisible} />
       ) : null}
-      <small>
-        <strong className="text-c-variant">{META.title}</strong>
-      </small>
-      <h1 className="page-title">{title}</h1>
-      <HeaderNav>
-        <li>
-          <button
-            data-fine-button="ghost"
-            disabled={!IS_BROWSER}
-            onClick={() => setSearchVisible(true)}
-            title="Search"
-          >
-            <SearchIcon />
-          </button>
-        </li>
-        <li className="header__divider" data-fine-transition></li>
-        <HeaderNavItem
-          to="/"
-          title="Favorites"
-          color="favorite"
-          isActive={"/" === url}
-        >
-          <HeartIcon />
-        </HeaderNavItem>
-        {BOOKMARKS.map((list) => (
-          <HeaderNavItem
-            to={`/${list.id}`}
-            isActive={`/${list.id}` === url}
-            label={list.title}
-            title={list.title}
-          />
-        ))}
-      </HeaderNav>
     </header>
   );
 }

@@ -28,7 +28,7 @@ Deployment should work out of the box when linking the repository to a project o
 
 Apart from the open source packages listed in [import_map.json](import_map.json), Bookmarks uses:
 
-- Icons from [Simple Icons](https://simpleicons.org/) and [Lucide](https://lucide.dev/)
+- Icons from [Lucide](https://lucide.dev/)
 - Favicons generated with [IconKitchen](https://icon.kitchen/)
 
 Thanks 🙏

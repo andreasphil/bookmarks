@@ -1,17 +1,14 @@
 /** @jsx h */
 import { h } from "preact";
 import { META } from "../utils/lib.ts";
-import { GitHubIcon } from "./Icons.tsx";
 
 export default function Footer() {
   return (
-    <footer data-fine-container>
+    <footer data-container className="footer">
       <small>
-        A thing made by <a href={META.authorWebsite}>{META.authorName}.</a>
+        A thing made by <a href={META.authorWebsite}>{META.authorName}</a>.{" "}
+        🐱 <a href={META.repository}>View source</a>.
       </small>
-      <a href={META.repository} title="Source code on GitHub">
-        <GitHubIcon />
-      </a>
     </footer>
   );
 }

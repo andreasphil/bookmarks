@@ -109,12 +109,11 @@ export default function SearchDialog(props: {
   let resultsEl = null;
   if (results && results.length > 0) {
     resultsEl = (
-      <ul>
+      <ul className="search-dialog__results">
         {results.map((bookmark, i) => (
-          <li key={bookmark.url}>
+          <li className="search-dialog__result" key={bookmark.url}>
             <a
               className={i === focusedResult ? "focus" : undefined}
-              data-fine-transition
               href={bookmark.url}
               onFocus={() => setFocusedResult(i)}
             >
@@ -130,7 +129,7 @@ export default function SearchDialog(props: {
     );
   } else if (query) {
     resultsEl = (
-      <div className="search-dialog__empty" data-fine-trim="both">
+      <div className="search-dialog__empty" data-trim="both">
         <h3>😵‍💫</h3>
         <p className="text-c-variant">Sorry, couldn&rsquo;t find anything.</p>
       </div>
@@ -139,7 +138,12 @@ export default function SearchDialog(props: {
 
   return (
     <dialog className="search-dialog" onClose={onDialogClose} ref={dialogRef}>
-      <input onInput={onSearch} placeholder="Search for ..." value={query} />
+      <input
+        className="search-dialog__input"
+        onInput={onSearch}
+        placeholder="Search for ..."
+        value={query}
+      />
       {resultsEl}
     </dialog>
   );

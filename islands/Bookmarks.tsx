@@ -16,7 +16,7 @@ export default function Bookmarks(props: { groups: Bookmarks["groups"] }) {
   };
 
   return (
-    <main data-fine-container data-fine-trim="both">
+    <main data-container data-trim="both">
       {props.groups.map((group) => (
         <BookmarkList
           isFavorite={isFavorite}

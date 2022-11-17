@@ -18,10 +18,9 @@ function BookmarkListItem(
   };
 
   return (
-    <li>
+    <li className="bookmarks__item">
       <a
-        className={clsx({ favorite: props.isFavorite })}
-        data-fine-transition
+        className={clsx("bookmarks__link", { favorite: props.isFavorite })}
         href={props.url}
         title={props.title}
       >
@@ -31,7 +30,7 @@ function BookmarkListItem(
             className={clsx("bookmarks__favorite", {
               "bookmarks__favorite--active": props.isFavorite,
             })}
-            data-fine-button="ghost"
+            data-variant="ghost"
             onClick={onFavoriteClick}
             title={`Mark ${props.title} as favorite`}
             disabled={!IS_BROWSER}
@@ -41,7 +40,7 @@ function BookmarkListItem(
         </span>
         <strong className="bookmarks__title">{props.title}</strong>
         {props.description ? (
-          <small class="text-c-variant">{props.description}</small>
+          <small className="text-c-variant">{props.description}</small>
         ) : null}
       </a>
     </li>
@@ -64,7 +63,7 @@ export default function BookmarkList(
   return (
     <Fragment>
       {props.title ? (
-        <h2 className="bookmark-group-title">{props.title}</h2>
+        <h2 className="bookmarks__group-title">{props.title}</h2>
       ) : null}
       <ul className="bookmarks">
         {props.items.map((item) => (

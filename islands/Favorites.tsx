@@ -16,13 +16,13 @@ export default function FavoritesIsland() {
   };
 
   return (
-    <main data-fine-container data-fine-trim="both">
+    <main data-container data-trim="both">
       {Object.keys(favorites).length === 0 ? (
         <ul className="bookmarks bookmarks--with-placeholders">
           {Array(6)
             .fill(undefined)
             .map((_, i) => (
-              <li key={i} data-fine-transition />
+              <li key={i} className="bookmarks__item" />
             ))}{" "}
         </ul>
       ) : (

@@ -20,7 +20,6 @@ export default function Layout(
         <meta name="theme-color" content="hsl(155 80% 38%)" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="stylesheet" href="/vendor/fine@v0.3.0.css" />
         <link rel="stylesheet" href="/style.css" />
       </Head>
       <Header title={props.title ?? ""} url={props.url}></Header>
