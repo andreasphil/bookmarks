@@ -1,7 +1,5 @@
-/** @jsx h */
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import clsx from "clsx";
-import { IS_BROWSER } from "fresh/runtime.ts";
-import { Fragment, h } from "preact";
 import { useCallback } from "preact/hooks";
 import { HeartIcon } from "../components/Icons.tsx";
 import type { Bookmark, Bookmarks } from "../utils/lib.ts";
@@ -61,7 +59,7 @@ export default function BookmarkList(
   );
 
   return (
-    <Fragment>
+    <>
       {props.title ? (
         <h2 className="bookmarks__group-title">{props.title}</h2>
       ) : null}
@@ -74,6 +72,6 @@ export default function BookmarkList(
           />
         ))}
       </ul>
-    </Fragment>
+    </>
   );
 }

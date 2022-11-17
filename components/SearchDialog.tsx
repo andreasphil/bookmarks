@@ -1,7 +1,5 @@
-/** @jsx h */
 import createSearch from "js-inverted-index/index.ts";
 import type { Search, SearchIndexDump } from "js-inverted-index/types.ts";
-import { h } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
 import type { Bookmark } from "../utils/lib.ts";
 

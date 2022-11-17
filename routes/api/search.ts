@@ -1,4 +1,4 @@
-import type { Handlers } from "fresh/server.ts";
+import type { Handlers } from "$fresh/server.ts";
 import createSearch from "js-inverted-index/index.ts";
 import { fullWordSplit } from "js-inverted-index/utils.ts";
 import { join } from "std/path/mod.ts";

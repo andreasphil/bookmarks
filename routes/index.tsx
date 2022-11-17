@@ -1,6 +1,4 @@
-/** @jsx h */
-import type { PageProps } from "fresh/server.ts";
-import { h } from "preact";
+import type { PageProps } from "$fresh/server.ts";
 import Layout from "../components/Layout.tsx";
 import FavoritesIsland from "../islands/Favorites.tsx";
 

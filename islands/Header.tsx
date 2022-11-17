@@ -1,7 +1,5 @@
-/** @jsx h */
-import { IS_BROWSER } from "fresh/runtime.ts";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import type { RenderableProps } from "preact";
-import { h } from "preact";
 import { useCallback, useEffect, useState } from "preact/hooks";
 import { HeartIcon, SearchIcon } from "../components/Icons.tsx";
 import SearchDialog from "../components/SearchDialog.tsx";

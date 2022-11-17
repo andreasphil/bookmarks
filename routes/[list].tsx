@@ -1,7 +1,5 @@
-/** @jsx h */
-import type { Handlers } from "fresh/server.ts";
-import { PageProps } from "fresh/server.ts";
-import { h } from "preact";
+import type { Handlers } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
 import { join } from "std/path/mod.ts";
 import Layout from "../components/Layout.tsx";
 import BookmarksIsland from "../islands/Bookmarks.tsx";

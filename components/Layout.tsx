@@ -1,7 +1,5 @@
-/** @jsx h */
-import { Head } from "fresh/runtime.ts";
+import { Head } from "$fresh/runtime.ts";
 import type { RenderableProps } from "preact";
-import { Fragment, h } from "preact";
 import Header from "../islands/Header.tsx";
 import { getPageTitle } from "../utils/lib.ts";
 import Footer from "./Footer.tsx";
@@ -13,7 +11,7 @@ export default function Layout(
   }>
 ) {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>{getPageTitle(props.title)}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -25,6 +23,6 @@ export default function Layout(
       <Header title={props.title ?? ""} url={props.url}></Header>
       {props.children}
       <Footer />
-    </Fragment>
+    </>
   );
 }

@@ -1,6 +1,4 @@
-/** @jsx h */
-import { IS_BROWSER } from "fresh/runtime.ts";
-import { h } from "preact";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 import BookmarkList from "../components/BookmarkList.tsx";
 import type { Bookmark } from "../utils/lib.ts";
 import { useFavorites, useNoopFavorites } from "../utils/lib.ts";

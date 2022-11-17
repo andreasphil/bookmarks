@@ -1,5 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
 import { META } from "../utils/lib.ts";
 
 export default function Footer() {
