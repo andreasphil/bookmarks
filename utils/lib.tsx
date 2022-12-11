@@ -1,4 +1,4 @@
-import Header from "$/islands/header.tsx";
+import Header from "$/islands/searchHeader.tsx";
 import { Head } from "$fresh/runtime.ts";
 import { RenderableProps } from "preact";
 
