@@ -1,7 +1,11 @@
+import BookmarkList from "$/components/BookmarkList.tsx";
+import {
+  useFavorites,
+  useNoopFavorites,
+  type Bookmark,
+  type Bookmarks,
+} from "$/utils/lib.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
-import BookmarkList from "../components/BookmarkList.tsx";
-import type { Bookmark, Bookmarks } from "../utils/lib.ts";
-import { useFavorites, useNoopFavorites } from "../utils/lib.ts";
 
 export default function Bookmarks(props: { groups: Bookmarks["groups"] }) {
   const { isFavorite, updateFavorites } = IS_BROWSER

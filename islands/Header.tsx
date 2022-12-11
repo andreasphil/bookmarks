@@ -1,3 +1,5 @@
+import { HeartIcon, SearchIcon } from "$/components/Icons.tsx";
+import { BOOKMARKS, META, type Bookmark } from "$/utils/lib.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import type { RenderableProps } from "preact";
 import { useCallback, useEffect, useState } from "preact/hooks";

@@ -1,6 +1,6 @@
+import Layout from "$/components/Layout.tsx";
+import Favorites from "$/islands/Favorites.tsx";
 import type { PageProps } from "$fresh/server.ts";
-import Layout from "../components/Layout.tsx";
-import FavoritesIsland from "../islands/Favorites.tsx";
 
 export default function Home(props: PageProps) {
   return (

@@ -1,3 +1,6 @@
+import Layout from "$/components/Layout.tsx";
+import BookmarksIsland from "$/islands/Bookmarks.tsx";
+import { BOOKMARKS, type Bookmarks } from "$/utils/lib.ts";
 import type { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import { join } from "std/path/mod.ts";

@@ -1,8 +1,8 @@
+import { HeartIcon } from "$/components/Icons.tsx";
+import type { Bookmark, Bookmarks } from "$/utils/lib.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import clsx from "clsx";
 import { useCallback } from "preact/hooks";
-import { HeartIcon } from "../components/Icons.tsx";
-import type { Bookmark, Bookmarks } from "../utils/lib.ts";
 
 function BookmarkListItem(
   props: Bookmark & {

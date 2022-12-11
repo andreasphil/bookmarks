@@ -1,3 +1,4 @@
+import type { Bookmark, Bookmarks } from "$/utils/lib.ts";
 import type { Handlers } from "$fresh/server.ts";
 import createSearch from "js-inverted-index/index.ts";
 import { fullWordSplit } from "js-inverted-index/utils.ts";

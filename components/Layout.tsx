@@ -1,8 +1,7 @@
+import Header from "$/islands/Header.tsx";
+import { getPageTitle, META } from "$/utils/lib.ts";
 import { Head } from "$fresh/runtime.ts";
 import type { RenderableProps } from "preact";
-import Header from "../islands/Header.tsx";
-import { getPageTitle } from "../utils/lib.ts";
-import Footer from "./Footer.tsx";
 
 export default function Layout(
   props: RenderableProps<{
