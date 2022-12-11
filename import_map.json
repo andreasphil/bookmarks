@@ -6,7 +6,7 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
     "clsx": "https://esm.sh/clsx@1.2.1",
     "dialog-polyfill": "https://esm.sh/dialog-polyfill@0.5.6",
-    "js-inverted-index/": "https://cdn.jsdelivr.net/gh/andreasphil/js-inverted-index@v1.1.0/src/",
+    "js-inverted-index/": "https://cdn.jsdelivr.net/gh/andreasphil/js-inverted-index@v1.2.0/src/",
     "preact": "https://esm.sh/preact@10.11.0",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
     "preact/": "https://esm.sh/preact@10.11.0/",

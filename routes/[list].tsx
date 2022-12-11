@@ -1,13 +1,7 @@
-import Layout from "$/components/Layout.tsx";
-import BookmarksIsland from "$/islands/Bookmarks.tsx";
-import { BOOKMARKS, type Bookmarks } from "$/utils/lib.ts";
+import { BOOKMARKS, Layout, type Bookmarks } from "$/utils/lib.tsx";
 import type { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import { join } from "std/path/mod.ts";
-import Layout from "../components/Layout.tsx";
-import BookmarksIsland from "../islands/Bookmarks.tsx";
-import type { Bookmarks } from "../utils/lib.ts";
-import { BOOKMARKS } from "../utils/lib.ts";
 
 export const handler: Handlers<Bookmarks | null> = {
   async GET(_, context) {
@@ -26,11 +20,39 @@ export const handler: Handlers<Bookmarks | null> = {
   },
 };
 
-export default function Page(props: PageProps<Bookmarks | null>) {
+export default function ListBookmarks(props: PageProps<Bookmarks | null>) {
   return (
     <Layout title={props.data?.title} url={props.url.pathname}>
       {props.data?.groups ? (
-        <BookmarksIsland groups={props.data.groups} />
+        <main data-container data-trim="both">
+          {props.data.groups.map((group) => (
+            <>
+              {group.title ? (
+                <h2 className="bookmarks__group-title">{group.title}</h2>
+              ) : null}
+
+              <ul className="bookmarks">
+                {group.items.map((item) => (
+                  <li className="bookmarks__item">
+                    <a
+                      className="bookmarks__link"
+                      href={item.url}
+                      title={item.title}
+                    >
+                      <span className="bookmarks__icon">{item.icon}</span>
+                      <strong className="bookmarks__title">{item.title}</strong>
+                      {item.description ? (
+                        <small className="text-c-variant">
+                          {item.description}
+                        </small>
+                      ) : undefined}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ))}
+        </main>
       ) : null}
     </Layout>
   );
