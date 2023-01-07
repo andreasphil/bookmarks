@@ -62,6 +62,7 @@ export function Layout(
       <Head>
         <title>{getPageTitle(props.title)}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="hsl(199 93% 47%)" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="stylesheet" href="/style.css" />
