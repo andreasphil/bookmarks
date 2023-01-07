@@ -1,7 +1,9 @@
 import { BOOKMARKS, META, type Bookmark } from "$/utils/lib.tsx";
 import { IS_BROWSER } from "$fresh/runtime.ts";
-import createSearch from "js-inverted-index/index.ts";
-import type { Search, SearchIndexDump } from "js-inverted-index/types.ts";
+import createSearch, {
+  type Search,
+  type SearchIndexDump,
+} from "js-inverted-index/mod.ts";
 import type { RenderableProps } from "preact";
 import { useCallback, useEffect, useRef, useState } from "preact/hooks";
 

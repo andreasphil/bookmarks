@@ -1,7 +1,6 @@
 import type { Bookmark, Bookmarks } from "$/utils/lib.tsx";
 import type { Handlers } from "$fresh/server.ts";
-import createSearch from "js-inverted-index/index.ts";
-import { startsWith } from "js-inverted-index/utils.ts";
+import createSearch, { startsWith } from "js-inverted-index/mod.ts";
 import { join } from "std/path/mod.ts";
 
 // TODO: Cache this once the caching API is available
