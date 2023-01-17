@@ -432,14 +432,14 @@
         "icon": "🥞"
       },
       {
-        "title": "State of CSS survey",
-        "url": "https://2021.stateofcss.com/",
+        "title": "State of CSS",
+        "url": "https://2022.stateofcss.com/",
         "description": "Annual survey about trends in CSS",
         "icon": "🍭"
       },
       {
-        "title": "State of JavaScript survey",
-        "url": "https://2021.stateofjs.com/",
+        "title": "State of JavaScript",
+        "url": "https://2022.stateofjs.com/",
         "description": "Annual survey about trends in JavaScript",
         "icon": "🏝"
       },
