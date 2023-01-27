@@ -190,7 +190,7 @@ export default function Header({ title, url }: { title: string; url: string }) {
 
     let handled = false;
     if (event.key.match(/^[0-9]$/)) {
-      const i = Number.parseInt(event.key) - 2;
+      const i = Number.parseInt(event.key) - 1;
       if (i === -1) {
         location.href = "/";
         handled = true;
@@ -214,9 +214,7 @@ export default function Header({ title, url }: { title: string; url: string }) {
   return (
     <header data-container data-trim="top" className="header">
       <hgroup>
-        <p>
-          <strong>{META.title}</strong>
-        </p>
+        <p>{META.title}</p>
         <h1>{title}</h1>
       </hgroup>
       <nav>
@@ -224,7 +222,7 @@ export default function Header({ title, url }: { title: string; url: string }) {
           <li>
             <button
               className="header__button"
-              data-variant="ghost"
+              data-variant="muted"
               disabled={!IS_BROWSER}
               onClick={() => setSearchVisible(true)}
               title="Search"

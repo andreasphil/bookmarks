@@ -1,10 +1,10 @@
-@import url(./vendor/fine@v0.8.0.css) layer(fine);
+@import url(./vendor/fine@v0.9.0.css) layer(fine);
 
 :root {
   /* Calculated with https://clamping.andreasphil.com */
   --body-padding-y: clamp(2rem, 8.972vw - 0.125rem, 5rem);
-  --theme-primary: 199 93% 47%;
-  --theme-tint: 199;
+  --theme-primary: 200 93% 47%;
+  --theme-tint: 200;
 }
 
 .text-c-variant {
@@ -25,7 +25,6 @@
 .header__button {
   --border-width: 0px;
   padding: 0.375rem 0.5rem;
-  color: var(--c-fg-variant);
 }
 
 .header__divider {
@@ -99,6 +98,8 @@
 .bookmarks__title {
   margin-top: 1em;
   text-transform: capitalize;
+  line-height: 1.25em;
+  margin-bottom: 0.25rem;
 }
 
 /* -------------------------------------------------- *
