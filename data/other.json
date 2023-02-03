@@ -98,6 +98,12 @@
         "icon": "🐦"
       },
       {
+        "title": "Numbr",
+        "url": "https://numbr.dev",
+        "description": "Calculator combined with a notepad",
+        "icon": "🧮"
+      },
+      {
         "title": "Paste to Markdown",
         "url": "https://euangoddard.github.io/clipboard2markdown",
         "description": "Convert rich-text to markdown",
