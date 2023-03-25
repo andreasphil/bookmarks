@@ -96,7 +96,7 @@
       },
       {
         "title": "JSON Hero",
-        "url":"https://jsonhero.io",
+        "url": "https://jsonhero.io",
         "description": "Browser-based JSON viewer",
         "icon": "🦸"
       },
@@ -329,6 +329,12 @@
         "icon": "🌿"
       },
       {
+        "title": "Modern Font Stacks",
+        "url": "https://modernfontstacks.com/",
+        "description": "CSS font stacks for pre-installed fonts",
+        "icon": "📘"
+      },
+      {
         "title": "Mozilla Developer Network",
         "url": "https://developer.mozilla.org/en-US",
         "description": "Web development guides and references",
@@ -358,12 +364,6 @@
         "url": "https://solidstart.info",
         "description": "How to improve your creation for everybody",
         "icon": "👍"
-      },
-      {
-        "title": "System Font Stack",
-        "url": "https://systemfontstack.com/",
-        "description": "CSS font stack for pre-installed fonts",
-        "icon": "📘"
       },
       {
         "title": "System *Things",
