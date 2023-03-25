@@ -39,7 +39,7 @@ export const BOOKMARKS: BookmarksMeta[] = [
 export const META = {
   title: "Andreas’ Bookmarks",
   authorName: "Andreas Philippi",
-  authorWebsite: "https://andreasphil.com",
+  authorWebsite: "https://a13i.dev",
   repository: "https://github.com/andreasphil/bookmarks",
 } as const;
 
