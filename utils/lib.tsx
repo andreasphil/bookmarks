@@ -57,6 +57,8 @@ export function Layout(
     url: string;
   }>
 ) {
+  const hideHtml = "html { opacity: 0; visibility: hidden }";
+
   return (
     <>
       <Head>
@@ -65,6 +67,8 @@ export function Layout(
         <meta name="theme-color" content="hsl(199 93% 47%)" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        <style>{hideHtml}</style>
         <link rel="stylesheet" href="/style.css" />
       </Head>
 
