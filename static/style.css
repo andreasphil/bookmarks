@@ -1,4 +1,4 @@
-@import url(./vendor/fine@v0.9.1.css) layer(fine);
+@import url(./vendor/fine@v0.10.0.css) layer(fine);
 
 :root {
   /* Calculated with https://clamping.andreasphil.com */
@@ -30,12 +30,6 @@ html {
 .header__button {
   --border-width: 0px;
   padding: 0.375rem 0.5rem;
-}
-
-.header__divider {
-  background: var(--c-border);
-  margin: 0 0.375rem;
-  width: var(--border-width-large);
 }
 
 /* -------------------------------------------------- *

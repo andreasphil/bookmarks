@@ -1,4 +1,4 @@
-import { BOOKMARKS, META, type Bookmark } from "$/utils/lib.tsx";
+import { type Bookmark, BOOKMARKS, META } from "$/utils/lib.tsx";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import createSearch, {
   type Search,
@@ -212,41 +212,43 @@ export default function Header({ title, url }: { title: string; url: string }) {
   const [searchVisible, setSearchVisible] = useState(false);
 
   return (
-    <header data-container data-trim="top" className="header">
-      <hgroup>
-        <p>{META.title}</p>
-        <h1>{title}</h1>
-      </hgroup>
-      <nav>
-        <ul>
-          <li>
-            <button
-              className="header__button"
-              data-variant="muted"
-              disabled={!IS_BROWSER}
-              onClick={() => setSearchVisible(true)}
-              title="Search"
-            >
-              🔎
-            </button>
-          </li>
-
-          <li className="header__divider"></li>
-
-          {/* All other collections */}
-          {BOOKMARKS.map((list) => (
-            <HeaderNavItem
-              to={`/${list.id}`}
-              isActive={`/${list.id}` === url}
-              label={list.title}
-              title={list.title}
-            />
-          ))}
-        </ul>
-      </nav>
-      {IS_BROWSER ? (
-        <SearchDialog visible={searchVisible} onSetVisible={setSearchVisible} />
-      ) : null}
-    </header>
+    <div>
+      <header data-container data-trim="top" className="header">
+        <hgroup>
+          <p>{META.title}</p>
+          <h1>{title}</h1>
+        </hgroup>
+        <nav>
+          <ul>
+            <li>
+              <button
+                className="header__button"
+                data-variant="muted"
+                disabled={!IS_BROWSER}
+                onClick={() => setSearchVisible(true)}
+                title="Search"
+              >
+                🔎
+              </button>
+            </li>
+            {/* All other collections */}
+            {BOOKMARKS.map((list) => (
+              <HeaderNavItem
+                to={`/${list.id}`}
+                isActive={`/${list.id}` === url}
+                label={list.title}
+                title={list.title}
+              />
+            ))}
+          </ul>
+        </nav>
+        {IS_BROWSER ? (
+          <SearchDialog
+            visible={searchVisible}
+            onSetVisible={setSearchVisible}
+          />
+        ) : null}
+      </header>
+    </div>
   );
 }
