@@ -7,28 +7,31 @@
 </p>
 
 <p align="center">
-  <a href="https://deno.com/deploy" title="Deno Deploy">
-    <img src="https://img.shields.io/badge/hosted%20on-Deno%20Deploy-026BEB.svg?logo=deno&labelColor=black&style=for-the-badge" alt="Hosted on Deno Deploy" />
+  <a href="https://nextjs.org" title="Next.js">
+    <img src="https://img.shields.io/badge/Built_with-Next.js-026BEB.svg?logo=next.js&labelColor=black&style=for-the-badge" alt="Built with Next.js" />
   </a>
 </p>
 
+> 💡 This project is a playground for tinkering with various technologies, and is re-written every once in a while. Previous versions were built with [Deno](https://github.com/andreasphil/bookmarks/tree/v2.8.0) and [WMR](https://github.com/andreasphil/bookmarks/tree/v1.2.0).
+
 ## Development
 
-The site is a Preact app built with [Fresh](https://fresh.deno.dev). Bookmarks are stored in `/data`. To start the server:
+The site is a React app built with [Next.js](https://nextjs.org), and powered by the new [App Router](https://beta.nextjs.org/docs). Bookmarks are stored in `/data`. The following commands are available for developing and running the app:
 
 ```sh
-deno task start       # Start development server
+npm run dev     # Start development server
+npm run build   # Create a production bundle
+npm run start   # Serve the production bundle locally
 ```
 
-## Deploy to Deno
+## Deploy to Vercel
 
-Deployment should work out of the box when linking the repository to a project on [Deno Deploy](https://deno.com).
+Deployment should work out of the box when linking the repository to a project on [Vercel](https://vercel.com).
 
 ## Credits
 
-Apart from the open source packages listed in [import_map.json](import_map.json), Bookmarks uses:
+Apart from the open source packages listed in [package.json](package.json), Bookmarks uses:
 
-- Icons from [Lucide](https://lucide.dev/)
 - Favicons generated with [IconKitchen](https://icon.kitchen/)
 
 Thanks 🙏

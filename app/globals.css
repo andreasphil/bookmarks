@@ -1,0 +1,12 @@
+@import "finecss/dist/index.min.css" layer(fine);
+
+:root {
+  /* Calculated with https://clamp.a13i.dev */
+  --body-padding-y: clamp(2rem, 8.972vw - 0.125rem, 5rem);
+  --theme-primary: 200 93% 47%;
+  --theme-tint: 200;
+}
+
+.text-c-variant {
+  color: var(--c-fg-variant);
+}

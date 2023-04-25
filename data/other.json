@@ -1,0 +1,138 @@
+[
+  {
+    "title": "Resources",
+    "items": [
+      {
+        "title": "80,000 Hours",
+        "url": "https://80000hours.org",
+        "description": "Have a greater impact in your career",
+        "icon": "⛑"
+      },
+      {
+        "title": "Basecamp’s communication guidelines",
+        "url": "https://basecamp.com/guides/how-we-communicate",
+        "description": "Guide to internal communication",
+        "icon": "💬"
+      },
+      {
+        "title": "Character Lab",
+        "url": "https://characterlab.org",
+        "description": "What make people thrive?",
+        "icon": "😌"
+      },
+      {
+        "title": "CORE",
+        "url": "https://core-econ.org",
+        "description": "Free online economics textbook",
+        "icon": "🍱"
+      },
+      {
+        "title": "Darebee",
+        "url": "https://darebee.com",
+        "description": "Independent global fitness resource",
+        "icon": "🏋️‍♀️"
+      },
+      {
+        "title": "Design Systems",
+        "url": "https://designsystems.com",
+        "description": "Figma publication about design systems",
+        "icon": "🔮"
+      },
+      {
+        "title": "Good Books",
+        "url": "https://goodbooks.io",
+        "description": "Books recommended by successful people",
+        "icon": "📚"
+      },
+      {
+        "title": "Increment",
+        "url": "https://increment.com",
+        "description": "Magazine about making software systems",
+        "icon": "🏡"
+      },
+      {
+        "title": "Shape Up",
+        "url": "https://basecamp.com/shapeup/webbook",
+        "description": "Basecamp’s product development process",
+        "icon": "🏃‍♂️"
+      },
+      {
+        "title": "StaffEng",
+        "url": "https://staffeng.com",
+        "description": "Technical career paths",
+        "icon": "🧑‍💻"
+      },
+      {
+        "title": "The Deep Life",
+        "url": "https://www.thedeeplife.com",
+        "description": "Learn to focus in an increasingly distracted world",
+        "icon": "🧘‍♀️"
+      },
+      {
+        "title": "Thoughtbot playbook",
+        "url": "https://thoughtbot.com/playbook",
+        "description": "How Thoughtbot makes products",
+        "icon": "🤖"
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "items": [
+      {
+        "title": "CloudConvert",
+        "url": "https://cloudconvert.com",
+        "description": "Online file converter",
+        "icon": "️⛅️"
+      },
+      {
+        "title": "Gridzzly",
+        "url": "http://gridzzly.com",
+        "description": "Make your own grid paper",
+        "icon": "🧸"
+      },
+      {
+        "title": "LanguageTool",
+        "url": "https://languagetool.org",
+        "description": "Multilingual grammar, style, and spell checker",
+        "icon": "🙊"
+      },
+      {
+        "title": "Nitter",
+        "url": "https://nitter.net",
+        "description": "Alternative Twitter frontend",
+        "icon": "🐦"
+      },
+      {
+        "title": "Numbr",
+        "url": "https://numbr.dev",
+        "description": "Calculator combined with a notepad",
+        "icon": "🧮"
+      },
+      {
+        "title": "Paste to Markdown",
+        "url": "https://euangoddard.github.io/clipboard2markdown",
+        "description": "Convert rich-text to markdown",
+        "icon": "👇"
+      },
+      {
+        "title": "Privacy Policies",
+        "url": "https://privacypolicies.com",
+        "description": "Generate custom-made Privacy Policies",
+        "icon": "👩‍⚖️"
+      },
+      {
+        "title": "Scribe",
+        "url": "https://scribe.rip",
+        "description": "Alternative Medium frontend",
+        "icon": "📰"
+      },
+      {
+        "title": "Witeboard",
+        "url": "https://witeboard.com",
+        "description": "Shareable online whiteboard",
+        "icon": "🐼"
+      }
+    ]
+  }
+]
