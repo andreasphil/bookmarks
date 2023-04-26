@@ -18,7 +18,7 @@
         "title": "Fly.io",
         "url": "https://fly.io",
         "description": "Host databases and apps",
-        "icon": "🚀"
+        "icon": "🎈"
       },
       {
         "title": "GitHub",
@@ -30,13 +30,19 @@
         "title": "Hover",
         "url": "https://hover.com",
         "description": "Register and manage domains",
-        "icon": "🎈"
+        "icon": "🕴️"
       },
       {
         "title": "Netlify",
         "url": "https://app.netlify.com",
         "description": "Serverless platform",
         "icon": "🌍"
+      },
+      {
+        "title": "Vercel",
+        "url": "https://vercel.com",
+        "description": "Develop, preview, ship",
+        "icon": "🚀"
       }
     ]
   },
@@ -143,6 +149,12 @@
         "icon": "🌀"
       },
       {
+        "title": "Shields.io",
+        "url": "https://shields.io",
+        "description": "Concise, consistent, and legible readme badges",
+        "icon": "🛡️"
+      },
+      {
         "title": "Skypack",
         "url": "https://skypack.dev",
         "description": "Optimized npm packages without installing",
@@ -163,7 +175,7 @@
       },
       {
         "title": "Stargaze",
-        "url": "https://stargaze.andreasphil.com",
+        "url": "https://stargaze.a13i.dev",
         "description": "Browse and search your stars on GitHub",
         "icon": "✨"
       },
