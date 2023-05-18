@@ -1,0 +1,18 @@
+{
+  "development": {
+    "title": "Development",
+    "order": 0
+  },
+  "design": {
+    "title": "Design",
+    "order": 1
+  },
+  "learning": {
+    "title": "Learning",
+    "order": 2
+  },
+  "other": {
+    "title": "Other",
+    "order": 3
+  }
+}

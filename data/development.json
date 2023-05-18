@@ -71,15 +71,13 @@
         "title": "esm.sh",
         "url": "https://esm.sh",
         "description": "Fast, global CDN for npm packages with ES Module format",
-        "icon": "🚐",
-        "tags": ["cdn"]
+        "icon": "🚐"
       },
       {
         "title": "Go Packages",
         "url": "https://pkg.go.dev",
         "description": "Registry for Go packages",
-        "icon": "📦",
-        "tags": ["golang"]
+        "icon": "📦"
       },
       {
         "title": "Hoppscotch",
@@ -97,8 +95,7 @@
         "title": "jsDelivr",
         "url": "https://www.jsdelivr.com",
         "description": "Fast, reliable, and free CDN for open source",
-        "icon": "🚛",
-        "tags": ["cdn"]
+        "icon": "🚛"
       },
       {
         "title": "JSON Hero",
@@ -158,8 +155,7 @@
         "title": "Skypack",
         "url": "https://skypack.dev",
         "description": "Optimized npm packages without installing",
-        "icon": "🪂",
-        "tags": ["cdn"]
+        "icon": "🪂"
       },
       {
         "title": "Snyk Open Source Advisor",
@@ -189,15 +185,13 @@
         "title": "JSPM",
         "url": "https://jspm.org",
         "description": "CDN and package management for import maps",
-        "icon": "📍",
-        "tags": ["cdn"]
+        "icon": "📍"
       },
       {
         "title": "UNPKG",
         "url": "https://unpkg.com",
         "description": "Global CDN for npm packages",
-        "icon": "🚚",
-        "tags": ["cdn"]
+        "icon": "🚚"
       },
       {
         "title": "Web.dev Measure",
@@ -213,9 +207,8 @@
       {
         "title": "Apple Developer Docs",
         "url": "https://developer.apple.com/documentation/technologies",
-        "description": "API references, tutorials, and articles about Apple technologies",
-        "icon": "🍏",
-        "tags": ["swift"]
+        "description": "API references and tutorials about Apple technologies",
+        "icon": "🍏"
       },
       {
         "title": "Conventional Commits",
@@ -237,15 +230,15 @@
       },
       {
         "title": "Deno",
-        "description": "Modern JavaScript and TypeScript runtime",
         "url": "https://deno.land",
+        "description": "Modern JavaScript and TypeScript runtime",
         "icon": "🦕"
       },
       {
         "title": "Devhints",
         "url": "https://devhints.io",
         "description": "Collection of cheatsheets",
-        "icon": "⛅️"
+        "icon": "⛅"
       },
       {
         "title": "Does it mutate?",
@@ -257,8 +250,7 @@
         "title": "Effective Go",
         "url": "https://go.dev/doc/effective_go",
         "description": "Tips for writing clear, idiomatic Go code",
-        "icon": "💆",
-        "tags": ["golang"]
+        "icon": "💆"
       },
       {
         "title": "Eliminate render-blocking resources",
@@ -270,13 +262,12 @@
         "title": "Essential Go",
         "url": "https://www.programming-books.io/essential/go/",
         "description": "Clear, concise explanations of Go concepts",
-        "icon": "🎒",
-        "tags": ["golang"]
+        "icon": "🎒"
       },
       {
         "title": "Default exports in JavaScript",
         "url": "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default/",
-        "description": "\"export default thing\" is different to \"export { thing as default }\"",
+        "description": "Surprising things about exports in JavaScript",
         "icon": "🎪"
       },
       {
@@ -301,8 +292,7 @@
         "title": "Go standard library",
         "url": "https://pkg.go.dev/std",
         "description": "Documentation of Go’s standard library",
-        "icon": "🐰",
-        "tags": ["golang"]
+        "icon": "🐰"
       },
       {
         "title": "Grid visual cheatsheet",
@@ -313,7 +303,7 @@
       {
         "title": "Guide to custom properties",
         "url": "https://css-tricks.com/a-complete-guide-to-custom-properties",
-        "description": "Everything important about CSS custom propterties",
+        "description": "Everything about CSS custom propterties",
         "icon": "🧮"
       },
       {
@@ -325,7 +315,7 @@
       {
         "title": "Head",
         "url": "https://htmlhead.dev",
-        "description": "Simple guide to HTML <head> elements",
+        "description": "Simple guide to HTML `head` elements",
         "icon": "🤯"
       },
       {
@@ -350,8 +340,7 @@
         "title": "Mozilla Developer Network",
         "url": "https://developer.mozilla.org/en-US",
         "description": "Web development guides and references",
-        "icon": "🦊",
-        "tags": ["mdn"]
+        "icon": "🦊"
       },
       {
         "title": "Patterns.dev",
@@ -387,8 +376,7 @@
         "title": "Swift Book",
         "url": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html",
         "description": "The Swift language guide",
-        "icon": "🦩",
-        "tags": ["swift"]
+        "icon": "🦩"
       },
       {
         "title": "TypeScript",
