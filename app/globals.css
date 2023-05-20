@@ -1,5 +1,10 @@
 @import "finecss/dist/index.min.css" layer(fine);
 
+:root {
+  --theme-primary: 200 93% 47%;
+  --theme-tint: 200;
+}
+
 .text-c-variant {
   color: var(--c-fg-variant);
 }

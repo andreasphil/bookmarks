@@ -68,6 +68,12 @@
         "icon": "🤔"
       },
       {
+        "title": "Clamping",
+        "url": "https://clamp.a13i.dev",
+        "description": "Simple CSS clamp calculator",
+        "icon": "🏕️"
+      },
+      {
         "title": "esm.sh",
         "url": "https://esm.sh",
         "description": "Fast, global CDN for npm packages with ES Module format",
@@ -211,6 +217,12 @@
         "icon": "🍏"
       },
       {
+        "title": "Architectural Decision Records",
+        "url": "https://adr.github.io/",
+        "description": "Structured decision logs",
+        "icon": "🪵"
+      },
+      {
         "title": "Conventional Commits",
         "url": "https://conventionalcommits.org",
         "description": "Add meaning to commit messages",
@@ -227,6 +239,12 @@
         "url": "https://exploringjs.com/deep-js/toc.html",
         "description": "Techniques for using the language better",
         "icon": "🤿"
+      },
+      {
+        "title": "Default exports in JavaScript",
+        "url": "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default/",
+        "description": "Surprising things about exports in JavaScript",
+        "icon": "🎪"
       },
       {
         "title": "Deno",
@@ -263,12 +281,6 @@
         "url": "https://www.programming-books.io/essential/go/",
         "description": "Clear, concise explanations of Go concepts",
         "icon": "🎒"
-      },
-      {
-        "title": "Default exports in JavaScript",
-        "url": "https://jakearchibald.com/2021/export-default-thing-vs-thing-as-default/",
-        "description": "Surprising things about exports in JavaScript",
-        "icon": "🎪"
       },
       {
         "title": "Fast, memory-efficient JavaScript",
@@ -377,6 +389,12 @@
         "url": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html",
         "description": "The Swift language guide",
         "icon": "🦩"
+      },
+      {
+        "title": "Trunk-based development",
+        "url": "https://trunkbaseddevelopment.com/",
+        "description": "A Git workflow for collaboration in a single branch",
+        "icon": "🌳"
       },
       {
         "title": "TypeScript",
