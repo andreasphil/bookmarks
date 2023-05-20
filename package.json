@@ -9,12 +9,12 @@
     "start": "next start"
   },
   "dependencies": {
-    "finecss": "github:andreasphil/fine#v0.11.0",
+    "finecss": "github:andreasphil/fine#v0.13.0",
     "fuse.js": "6.6.2",
-    "next": "13.3.1",
+    "next": "^13.4.2",
     "postcss-import": "15.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swr": "2.1.4"
+    "swr": "^2.1.5"
   }
 }

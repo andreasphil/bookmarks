@@ -1,11 +1,11 @@
 import { META } from "@/lib/config";
 import "./globals.css";
 import styles from "./layout.module.css";
+import ThemeColor from "./themeColor";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
   title: META.title,
-  themeColor: "hsl(199 93% 47%)",
   icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
 };
 
@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
             🐱 <a href={META.repository}>View source</a>.
           </small>
         </footer>
+
+        <ThemeColor />
       </body>
     </html>
   );
