@@ -56,6 +56,12 @@
         "icon": "🌇"
       },
       {
+        "title": "Bundlejs",
+        "url": "https://bundlejs.com/",
+        "description": "Quick package size checker",
+        "icon": "📦"
+      },
+      {
         "title": "Bundlephobia",
         "url": "https://bundlephobia.com",
         "description": "Find the cost of adding an npm package",
@@ -96,12 +102,6 @@
         "url": "http://keycode.info",
         "description": "Get JavaScript event keycodes",
         "icon": "⌨️"
-      },
-      {
-        "title": "jsDelivr",
-        "url": "https://www.jsdelivr.com",
-        "description": "Fast, reliable, and free CDN for open source",
-        "icon": "🚛"
       },
       {
         "title": "JSON Hero",
@@ -158,12 +158,6 @@
         "icon": "🛡️"
       },
       {
-        "title": "Skypack",
-        "url": "https://skypack.dev",
-        "description": "Optimized npm packages without installing",
-        "icon": "🪂"
-      },
-      {
         "title": "Snyk Open Source Advisor",
         "url": "https://snyk.io/advisor",
         "description": "Search and compare open source packages",
@@ -194,12 +188,6 @@
         "icon": "📍"
       },
       {
-        "title": "UNPKG",
-        "url": "https://unpkg.com",
-        "description": "Global CDN for npm packages",
-        "icon": "🚚"
-      },
-      {
         "title": "Web.dev Measure",
         "url": "https://web.dev/measure",
         "description": "Automated website audits",
@@ -221,6 +209,12 @@
         "url": "https://adr.github.io/",
         "description": "Structured decision logs",
         "icon": "🪵"
+      },
+      {
+        "title": "Bun",
+        "url": "https://bun.sh",
+        "description": "A fast, all-in-one JavaScript runtime",
+        "icon": "🥯"
       },
       {
         "title": "Conventional Commits",
@@ -379,7 +373,7 @@
         "icon": "👍"
       },
       {
-        "title": "System *Things",
+        "title": "System Things",
         "url": "https://css-tricks.com/system-things/",
         "description": "CSS properties that refer to system colors, fonts, etc.",
         "icon": "🖥"

@@ -235,9 +235,15 @@
         "icon": "🏢"
       },
       {
+        "title": "Fluent 2",
+        "url": "https://fluent2.microsoft.design/",
+        "description": "Microsoft’s design system",
+        "icon": "💠"
+      },
+      {
         "title": "Carbon",
         "url": "https://carbondesignsystem.com",
-        "description": "IBM’s open source design system",
+        "description": "IBM’s design system",
         "icon": "🪨"
       },
       {
@@ -263,6 +269,12 @@
         "url": "https://m3.material.io",
         "description": "Google’s design system",
         "icon": "🌺"
+      },
+      {
+        "title": "Tailwind UI",
+        "url": "https://tailwindui.com",
+        "description": "Components and templates from the Tailwind team",
+        "icon": "🍃"
       },
       {
         "title": "Vercel design",
