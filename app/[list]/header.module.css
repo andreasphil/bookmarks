@@ -1,6 +1,5 @@
-.header {
+.logo {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: var(--body-padding-y);
+  align-items: center;
+  gap: 0.75rem;
 }

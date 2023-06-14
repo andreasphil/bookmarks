@@ -1,6 +1,5 @@
 "use client";
 
-import { META } from "@/lib/config";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect } from "react";
 import styles from "./header.module.css";
@@ -34,12 +33,13 @@ export default function Header({ title, navItems, activeId }) {
   }, []);
 
   return (
-    <header data-container data-trim="top" className={styles.header}>
-      <hgroup>
-        <p>{META.title}</p>
-        <h1>{title}</h1>
-      </hgroup>
-      <nav>
+    <header data-trim="top">
+      <h1>{title}</h1>
+      <nav data-variant="fixed">
+        <strong className={styles.logo}>
+          <img src="/icon-192.png" alt="" width="36px" height="36px" />
+          Andreas&rsquo; Bookmarks
+        </strong>
         <ul>
           <li>
             <Search />

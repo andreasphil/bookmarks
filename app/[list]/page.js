@@ -20,7 +20,7 @@ export default async function List({ params }) {
     <>
       <Header title={data.title} activeId={params.list} navItems={navItems} />
 
-      <main data-container>
+      <main>
         {data.groups.map((group) => (
           <section key={group.title} className={styles.group} data-trim="both">
             {/* Group headline (if one exists) */}

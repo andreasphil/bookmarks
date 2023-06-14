@@ -1,11 +1,9 @@
-import { META } from "@/lib/config";
 import "./globals.css";
-import styles from "./layout.module.css";
 import ThemeColor from "./themeColor";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
-  title: META.title,
+  title: "Andreas’ Bookmarks",
   icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
 };
 
@@ -14,13 +12,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
-
-        <footer data-container className={styles.footer}>
-          <small>
-            A thing made by <a href={META.authorWebsite}>{META.authorName}</a>.
-            🐱 <a href={META.repository}>View source</a>.
-          </small>
-        </footer>
 
         <ThemeColor />
       </body>

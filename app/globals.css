@@ -3,6 +3,7 @@
 :root {
   --theme-primary: 200 93% 47%;
   --theme-tint: 200;
+  --body-width: 60rem;
 }
 
 .text-c-variant {
