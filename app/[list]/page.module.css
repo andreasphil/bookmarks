@@ -41,8 +41,13 @@
   transition-property: color, border-color;
 }
 
-.link:is(:hover, :focus) {
+.link:is(:hover) {
   border-color: var(--primary);
+}
+
+.link:is(:focus-visible) {
+  outline: var(--outline);
+  outline-offset: var(--outline-inset);
 }
 
 .icon {
